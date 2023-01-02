@@ -2,7 +2,15 @@ header {
     #main_nav {
         .nav_left {
             img {
+                @extend %img-contain;
                 width: 80%;
+            }
+        }
+        .nav_details {
+            li {
+                a {
+                    @include _All ($f_size: 12px,);
+                }
             }
         }
 
