@@ -1,18 +1,53 @@
 header {
     #main_nav {
+        padding: 40px 0;
+
         .nav_left {
             img {
                 @extend %img-contain;
                 width: 80%;
             }
         }
+
         .nav_details {
+            @extend %d-flex;
+            justify-content: flex-start;
+            gap: 50px;
+
             li {
                 a {
-                    @include _All ($f_size: 12px,);
+                    @include _All($f_size: 12px,
+                        $f_weight: 500,
+                        $color: $main_color,
+                        $l_height: 22px,
+                        $letter_spacing: 0.1em,
+                        $txt_dec: none);
+                }     
+            }
+            .special_add_to_cart {
+                i {
+                    @include _All($f_size: 19px,
+                        $f_weight: 600,
+                        $color: #1b1b1bbd,
+                        $l_height: 22px,
+                        $letter_spacing: 0.1em,
+                        $txt_dec: none);
+                }
+                #add_to_cart_icon {
+                    position: relative;
+                    color: $main_color;
+                    margin-right: 5px;
+                    margin-left: 15px;
+                    span {
+                        position: absolute;
+                        @extend %d-flex;
+                        @include _All($width: 15px, $height: 15px, $margin: 0 auto, $border_r: 50%, $bcg_color: $secondary_color, $color: white, $f_size: 9px, $f_weight: 700, $top: -3px, $right: -3px);
+                    }
+                }
+                span {
+                    @include _All($f_size: 12px, $f_weight: 500, $color: $main_color, $l_height: 22px, $letter_spacing: 0.1em, $txt_dec: none);
                 }
             }
         }
-
     }
 }

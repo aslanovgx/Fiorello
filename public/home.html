@@ -18,12 +18,12 @@
         <nav id="main_nav">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-3">
+                    <div class="col-lg-3">
                         <div class="nav_left">
                             <img src="./../src/images/h2-logo-1.png" alt="">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-9">
                         <ul class="nav_details">
                             <li>
                                 <a href="#">HOME</a>
@@ -43,17 +43,17 @@
                             <li>
                                 <a href="#">ELEMENTS</a>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <ul class="nav_right">
-                            <li>
+                            <li class="special_add_to_cart">
+
                                 <i class="fa-solid fa-magnifying-glass"></i>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-cart-shopping"></i>
+
+
+                                <i id="add_to_cart_icon" class="fa-solid fa-cart-shopping">
+                                    <span id="add_to_cart_index">1</span>
+                                </i>
                                 <span>CART</span>
                                 <span>($259)</span>
+
                             </li>
                         </ul>
                     </div>
@@ -66,11 +66,32 @@
         <section id="">
 
         </section>
+        <section>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
     </main>
 
 
 
-
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
@@ -78,6 +99,7 @@
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c486684c5e.js" crossorigin="anonymous"></script>
+    <script src="./../src/js/home.js"></script>
 </body>
 
 </html>

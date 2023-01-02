@@ -26,7 +26,8 @@
     $left:null,
     $right:null,
     $bottom:null,
-    $bcg_color:null
+    $bcg_color:null,
+    $letter_spacing: null,
 ) {
     width: $width;
     height: $height;
@@ -56,9 +57,17 @@
     right: $right;
     bottom: $bottom;
     background-color: $bcg_color;
+    letter-spacing: $letter_spacing;
 }
 
 %img-contain {
     object-fit: contain;
     object-position: center;
+}
+
+%d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
