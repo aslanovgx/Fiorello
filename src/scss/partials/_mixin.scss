@@ -1,32 +1,31 @@
-@mixin _All(
-    $width:null,
-    $height:null, 
-    $object_f:null, 
-    $object_p:null, 
-    $border:null, 
-    $border_r:null, 
-    $cursor:null,
-    $f_size:null,
-    $f_weight:null,
-    $color:null,
-    $l_height:null,
-    $txt_align:null,
-    $txt_dec:null,
-    $txt_transform:null,
-    $margin:null,
-    $padding:null,
-    $position:null,
-    $display:null,
-    $justify_cont:null,
-    $align_items:null,
-    $flex_direct:null,
-    $gap:null,
-    $border_right:null,
-    $top:null,
-    $left:null,
-    $right:null,
-    $bottom:null,
-    $bcg_color:null,
+@mixin _All($width: null,
+    $height: null,
+    $object_f: null,
+    $object_p: null,
+    $border: null,
+    $border_r: null,
+    $cursor: null,
+    $f_size: null,
+    $f_weight: null,
+    $color: null,
+    $l_height: null,
+    $txt_align: null,
+    $txt_dec: null,
+    $txt_transform: null,
+    $margin: null,
+    $padding: null,
+    $position: null,
+    $display: null,
+    $justify_cont: null,
+    $align_items: null,
+    $flex_direct: null,
+    $gap: null,
+    $border_right: null,
+    $top: null,
+    $left: null,
+    $right: null,
+    $bottom: null,
+    $bcg_color: null,
     $letter_spacing: null,
 ) {
     width: $width;
@@ -63,11 +62,76 @@
 %img-contain {
     object-fit: contain;
     object-position: center;
+    cursor: pointer;
+}
+
+%img-cover {
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
 }
 
 %d-flex {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
 
+%nav-details-copy {
+    @extend %d-flex;
+    justify-content: flex-start;
+    gap: 50px;
+    
+    li {
+        a {
+            @include _All($f_size: 12px,
+            $f_weight: 500,
+                $color: $main_color,
+                $l_height: 22px,
+                $letter_spacing: 0.1em,
+                $txt_dec: none);
+        }
+    }
+
+    .special_add_to_cart {
+        i {
+            @include _All($f_size: 19px,
+                $f_weight: 600,
+                $color: #1b1b1bbd,
+                $l_height: 22px,
+                $letter_spacing: 0.1em,
+                $txt_dec: none);
+        }
+
+        #add_to_cart_icon {
+            position: relative;
+            color: $main_color;
+            margin-right: 5px;
+            margin-left: 15px;
+
+            span {
+                position: absolute;
+                @extend %d-flex;
+                @include _All($width: 15px, $height: 15px, $margin: 0 auto, $border_r: 50%, $bcg_color: $secondary_color, $color: white, $f_size: 9px, $f_weight: 700, $top: -3px, $right: -3px);
+            }
+        }
+
+        span {
+            @include _All($f_size: 12px, $f_weight: 500, $color: $main_color, $l_height: 22px, $letter_spacing: 0.1em, $txt_dec: none);
+        }
+    }
+}
+
+%a-copy {
+    @include _All($f_size: 12px,
+    $f_weight: 500,
+    $color: $main_color,
+    $l_height: 22px,
+    $letter_spacing: 0.1em,
+    $txt_dec: none);
+    cursor: pointer;
+}
+%span-copy {
+    @include _All ($color: $span_color,$f_size: 12px);
 }

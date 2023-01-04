@@ -1,6 +1,6 @@
 header {
     #main_nav {
-        padding: 40px 0;
+        padding: 45px 0;
 
         .nav_left {
             img {
@@ -22,8 +22,9 @@ header {
                         $l_height: 22px,
                         $letter_spacing: 0.1em,
                         $txt_dec: none);
-                }     
+                }
             }
+
             .special_add_to_cart {
                 i {
                     @include _All($f_size: 19px,
@@ -33,21 +34,189 @@ header {
                         $letter_spacing: 0.1em,
                         $txt_dec: none);
                 }
+
                 #add_to_cart_icon {
                     position: relative;
                     color: $main_color;
                     margin-right: 5px;
                     margin-left: 15px;
+
                     span {
                         position: absolute;
                         @extend %d-flex;
                         @include _All($width: 15px, $height: 15px, $margin: 0 auto, $border_r: 50%, $bcg_color: $secondary_color, $color: white, $f_size: 9px, $f_weight: 700, $top: -3px, $right: -3px);
                     }
                 }
+
                 span {
                     @include _All($f_size: 12px, $f_weight: 500, $color: $main_color, $l_height: 22px, $letter_spacing: 0.1em, $txt_dec: none);
                 }
             }
         }
     }
+}
+
+main {
+    .container {
+        position: relative;
+
+        @media (max-width: 992px) {
+            position: static;
+        }
+    }
+
+    #send {
+        background-color: $send_section;
+
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        @media (max-width: 992px) {
+            position: relative;
+        }
+
+        .send_left {
+            position: relative;
+            // Position vermesek goturmur z-index i niye?
+            padding: 86px 0 96px 0;
+            z-index: 2;
+
+            h1 {
+                max-width: 347px;
+                font-family: 'Playfair Display', serif;
+                @include _All ($color: black, $l_height: 51px, $f_size: 41px, $f_weight: 400, $margin: 0 0 20px 0);
+
+                span {
+                    font-family: 'Playfair Display', serif;
+                    color: red;
+                }
+            }
+
+            p {
+                max-width: 402px;
+                font-family: 'Lora', serif;
+
+                @include _All ($color: $text_color_gray, $l_height: 29px, $f_size: 17px, $f_weight: 400, $margin: 0 0 30px 0);
+
+            }
+
+            .send_img {
+                img {
+                    @extend %img-contain;
+                }
+            }
+
+        }
+
+        .send_right {
+
+            img {
+                @extend %img-cover;
+                max-width: 400px;
+                height: 100vh;
+            }
+        }
+
+        .back_image_box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow: hidden;
+
+            img {
+                @extend %img-cover;
+                width: 100%;
+                height: 477px;
+                transition: 4s ease-in-out;
+                // transform: scale(1.03);
+            }
+        }
+    }
+
+    #isotop1 {
+        padding: 80px 0;
+
+        .nav_details-2 {
+            @extend %nav-details-copy;
+            gap: 33px;
+        }
+
+        .nav_details-3 {
+            @extend %nav-details-copy;
+            justify-content: flex-end;
+
+            li {
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .isotop_card {
+          
+            &:hover {
+                .img {
+                    img {
+                        transform: scale(1.03);
+                    }
+                }
+                .isotop_details {
+                    span {
+                        transform: translateX(300px);
+                    }
+                    .span_hover {
+                        transform: translateX(0px);
+                    }
+                }
+            }
+            .img {
+                width: 245px;
+                margin: 0 auto;
+                img {
+                    @extend %img-contain;
+                    width: 100%;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+
+            .isotop_details {
+                @extend %d-flex;
+                flex-direction: column;
+                margin-top: 20px;
+                position: relative;
+               overflow: hidden;
+                a {
+                    @extend %a-copy;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                }
+
+
+                span {
+                    @include _All ($color: $span_color, $f_size: 12px, $txt_align: center);
+                    transition: 0.4s ease-in-out;
+
+                }
+                .span_hover {
+                    position: absolute;
+                    top: 24px;
+                    left: calc((261px - 67px) / 2);
+                    transform: translateX(300px);
+                    transition: 0.4s ease-in-out;
+                    span {
+                        transition: 0.3s ease-in-out;
+                        &:hover {
+                            color: $secondary_color;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+
 }
