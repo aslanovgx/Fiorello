@@ -228,6 +228,8 @@ main #isotop1 .isotop_card .isotop_details {
   margin-top: 20px;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  width: 100%;
 }
 main #isotop1 .isotop_card .isotop_details a {
   text-transform: uppercase;

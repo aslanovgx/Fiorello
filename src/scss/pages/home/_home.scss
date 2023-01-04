@@ -186,6 +186,8 @@ main {
                 margin-top: 20px;
                 position: relative;
                overflow: hidden;
+               text-align: center;
+               width: 100%;
                 a {
                     @extend %a-copy;
                     text-transform: uppercase;

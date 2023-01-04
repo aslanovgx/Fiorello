@@ -94,26 +94,26 @@
                 <div class="row mb-4">
                     <div class="col-lg-9">
                         <ul class="nav_details-2">
-                            <li>
-                                <a href="#">ALL</a>
+                            <li data-filter="*">
+                                ALL
                             </li>
-                            <li>
-                                <a href="#">CACTUSES</a>
+                            <li data-filter=".cactuses">
+                                CACTUSES</a>
                             </li>
-                            <li>
-                                <a href="#">EXOTIC</a>
+                            <li data-filter=".exotic">
+                                <a href="">EXOTIC</a>
                             </li>
-                            <li>
-                                <a href="#">GREENS</a>
+                            <li data-filter=".greens">
+                                <a href="">GREENS</a>
                             </li>
-                            <li>
-                                <a href="#">POPULAR</a>
+                            <li data-filter=".popular">
+                                <a href="">POPULAR</a>
                             </li>
-                            <li>
-                                <a href="#">VARIOUS</a>
+                            <li data-filter=".various">
+                                <a href="">VARIOUS</a>
                             </li>
-                            <li>
-                                <a href="#">WINTER</a>
+                            <li data-filter=".winter">
+                                <a href="">WINTER</a>
                             </li>
                         </ul>
                     </div>
@@ -129,8 +129,8 @@
 
                 </div>
                 <div class="row ">
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-                        <div class="isotop_card">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5 isotop_all">
+                        <div class="isotop_card cactuses greens winter">
                             <div class="img">
                                 <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg"
                                     alt="">
@@ -146,8 +146,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-                        <div class="isotop_card">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5 isotop_all">
+                        <div class="isotop_card exotic">
                             <div class="img">
                                 <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg"
                                     alt="">
@@ -163,8 +163,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-                        <div class="isotop_card">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5 isotop_all">
+                        <div class="isotop_card cactuses greens winter">
                             <div class="img">
                                 <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg"
                                     alt="">
@@ -180,8 +180,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-                        <div class="isotop_card">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5 isotop_all">
+                        <div class="isotop_card exotic">
                             <div class="img">
                                 <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg"
                                     alt="">
@@ -197,8 +197,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-                        <div class="isotop_card">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5 isotop_all">
+                        <div class="isotop_card exotic popular">
                             <div class="img">
                                 <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg"
                                     alt="">
@@ -214,8 +214,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-                        <div class="isotop_card">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5 isotop_all">
+                        <div class="isotop_card cactuses greens">
                             <div class="img">
                                 <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg"
                                     alt="">
@@ -231,8 +231,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-                        <div class="isotop_card">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5 isotop_all">
+                        <div class="isotop_card exotic greens various">
                             <div class="img">
                                 <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg"
                                     alt="">
@@ -248,8 +248,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-                        <div class="isotop_card">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-5 isotop_all">
+                        <div class="isotop_card exotic popular">
                             <div class="img">
                                 <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg"
                                     alt="">
@@ -284,6 +284,8 @@
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c486684c5e.js" crossorigin="anonymous"></script>
+    <script src="./../src/js/jquery.min.js"></script>
+    <script src="./../src/js/isotope.min.js"></script>
     <script src="./../src/js/home.js"></script>
 </body>
 

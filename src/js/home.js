@@ -26,3 +26,31 @@ for (let i = 0; i < 3; i++) {
     }
 }
 window.onload = ChangeImg;
+
+// --------------------------------------------
+
+// init Isotope
+var $grid = $('.isotop_all').isotope({
+    // options
+});
+// filter items on button click
+$('.nav_details-2').on( 'click', 'li', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+    
+});
+
+
+
+
+
+
+// var Card_Isotop = document.querySelector('.isotop_card')
+//   var Isotop_all = document.querySelectorAll('.isotop_all')
+//     for (let i = 0; i < Isotop_all.length; i++) {
+//       const element = Isotop_all[i];
+//       if(element.style.height = '0px'){
+//         element.style.display = "none"
+//           console.log('sa');
+//       }
+//   }
