@@ -15,7 +15,7 @@ main #send .back_image_box img, main #send .send_right img {
   cursor: pointer;
 }
 
-main #expert .expert_images .expert_details, main #valentine .iframe_box a i, main #isotope1 .isotop_card .isotop_details, header #main_nav .nav_details .special_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details, main #isotope1 .nav_details-3 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-2 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-3, main #isotope1 .nav_details-2 {
+main #join .join_box form, main #expert .expert_images .expert_details, main #valentine .iframe_box a i, main #isotope1 .isotop_card .isotop_details, header #main_nav .nav_details .special_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details, main #isotope1 .nav_details-3 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-2 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-3, main #isotope1 .nav_details-2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ main #isotope1 .nav_details-3 .special_add_to_cart span, main #isotope1 .nav_det
   letter-spacing: 0.1em;
 }
 
-main #expert .expert_images .expert_details a, main #isotope1 .isotop_card .isotop_details a, main #isotope1 .nav_details-2 li {
+main #join .join_box form button, main #expert .expert_images .expert_details a, main #isotope1 .isotop_card .isotop_details a, main #isotope1 .nav_details-2 li {
   font-size: 12px;
   font-weight: 500;
   color: #1b1b1b;
@@ -101,7 +101,7 @@ main #valentine .iframe_right p {
   margin: 0 0 30px 0;
 }
 
-main #expert .expert_header h1 {
+main #join .join_box h1, main #expert .expert_header h1 {
   font-family: "Playfair Display", serif;
   font-size: 38px;
   font-weight: 400;
@@ -397,6 +397,58 @@ main #expert .expert_images .expert_details {
 main #expert .expert_images .expert_details a {
   text-transform: uppercase;
   margin-bottom: 5px;
+}
+main #join {
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-attachment: fixed;
+  margin-bottom: 100px;
+}
+main #join .join_box {
+  width: 100%;
+  margin: 100px 0;
+}
+main #join .join_box h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+main #join .join_box form {
+  justify-content: flex-start;
+}
+main #join .join_box form input {
+  width: 72%;
+  font-size: 12px;
+  color: #959595;
+  border: none;
+  padding: 21px;
+}
+main #join .join_box form input::-moz-placeholder {
+  font-size: 12px;
+  color: #959595;
+}
+main #join .join_box form input:-ms-input-placeholder {
+  font-size: 12px;
+  color: #959595;
+}
+main #join .join_box form input::placeholder {
+  font-size: 12px;
+  color: #959595;
+}
+main #join .join_box form button {
+  width: 28%;
+  border: none;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", serif;
+  background-color: #f34f3f;
+  height: 60px;
+  transition: 0.5s ease-in-out;
+}
+main #join .join_box form button:hover {
+  background-color: rgb(235, 38, 38);
 }
 main #iframe_fixed iframe {
   display: none;
