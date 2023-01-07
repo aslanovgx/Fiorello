@@ -303,6 +303,7 @@ main {
 
     #expert {
         padding: 80px 0;
+
         h1,
         p {
             font-family: "Lora", serif;
@@ -310,81 +311,152 @@ main {
 
         .expert_header {
             text-align: center;
+
             h1 {
                 @extend %big-h1-copy;
                 color: $iframe_right_h1_color;
             }
-            
+
             p {
                 @extend %gray-p-copy;
                 max-width: 535px;
                 margin: 0 auto;
             }
         }
+
         .expert_images {
             .expert_img {
                 width: 222px;
                 margin: 0 auto;
                 margin-bottom: 20px;
+
                 img {
                     width: 100%;
                     cursor: pointer;
                 }
             }
+
             .expert_details {
                 @extend %d-flex;
                 flex-direction: column;
                 text-align: center;
+
                 a {
                     @extend %a-copy;
                     text-transform: uppercase;
                     margin-bottom: 5px;
                 }
+
                 span {
                     @extend %span-for-expert-copy;
                 }
-                
+
             }
         }
 
     }
+
     #join {
         padding: 100px 0;
         background-repeat: no-repeat;
         background-size: inherit;
         background-attachment: fixed;
-        margin-bottom: 100px;
         .join_box {
             width: 100%;
             margin: 100px 0;
+
             h1 {
                 @extend %big-h1-copy;
                 color: white;
                 text-align: center;
                 font-size: 30px
             }
+
             form {
                 @extend %d-flex;
                 justify-content: flex-start;
+
                 input {
                     width: 72%;
-                    @include _All($color: $input_color,$f_size: 12px);
-                    @include _All($padding: 21px,$border: none);
+                    @include _All($color: $input_color, $f_size: 12px);
+                    @include _All($padding: 21px, $border: none);
+
                     &::placeholder {
-                        @include _All($color: $input_color,$f_size: 12px);
+                        @include _All($color: $input_color, $f_size: 12px);
                     }
                 }
+
                 button {
                     width: 28%;
                     @extend %a-copy;
-                    @include _All($f_size: 12px,$color: #fff,$border: none,$txt_transform: uppercase);
+                    @include _All($f_size: 12px, $color: #fff, $border: none, $txt_transform: uppercase);
                     font-family: "Montserrat", serif;
                     background-color: $secondary_color;
                     height: 60px;
                     transition: 0.5s ease-in-out;
+
                     &:hover {
                         background-color: rgb(235, 38, 38);
                     }
+                }
+            }
+        }
+    }
+
+    #blog {
+        padding: 100px 0;
+        .blog_header {
+            @extend %expert_header-copy;
+        }
+
+        .blog_box {
+
+            .blog_img {
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                &:hover {
+                    img {
+                        transform: scale(1.07);
+                    }
+                }
+                img {
+                    width: 100%;
+                    transition: 0.3s ease-in-out;
+                }
+
+                .blog_time {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    padding: 4px 18px;
+                    background-color: #fff;
+
+                    a {
+                        @extend %a-copy;
+                        transition: 0.3s ease-in-out;
+                        font-size: 10px;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: $secondary_color;
+                        }
+                    }
+                }
+            }
+
+            .blog_details {
+                @extend %expert_header-copy;
+
+                h1 {
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin: 10px 0 5px 0;
+                }
+
+                p {
+                    max-width: 264px;
+                    font-size: 15px;
                 }
             }
         }
@@ -403,5 +475,4 @@ main {
             z-index: 2;
         }
     }
-
 }

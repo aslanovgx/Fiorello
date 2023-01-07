@@ -172,3 +172,16 @@
     @include _All ($color: $span_color, $f_size: 12px, $txt_align: center);
     transition: 0.4s ease-in-out;
 }
+%expert_header-copy {
+    text-align: center;
+    h1 {
+        @extend %big-h1-copy;
+        color: $iframe_right_h1_color;
+    }
+    
+    p {
+        @extend %gray-p-copy;
+        max-width: 535px;
+        margin: 0 auto;
+    }
+}
