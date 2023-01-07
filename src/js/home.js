@@ -39,8 +39,28 @@ $('.nav_details-2').on( 'click', 'li', function() {
     $grid.isotope({ filter: filterValue });
     
 });
+$('.nav_details-2').on( 'click', 'li', function() {
+    $(this).siblings('.active').removeClass('active');
+    $(this).addClass('active');
+    
+});
+
+// --------------------------------------------
+
+const İframe_Btn = document.querySelector('#iframe_btn')
+const Iframe_Box = document.querySelector('#iframe_f')
+const Body = document.querySelector('#main')
 
 
+if (İframe_Btn) {
+    İframe_Btn.addEventListener('click', ()=>{
+        console.log('salam');
+        Iframe_Box.style.display = "block"
+        Body.style.opacity = "0.5"
+        Iframe_Box.style.opacity = "1"
+        
+    })
+}
 
 
 
@@ -48,9 +68,9 @@ $('.nav_details-2').on( 'click', 'li', function() {
 // var Card_Isotop = document.querySelector('.isotop_card')
 //   var Isotop_all = document.querySelectorAll('.isotop_all')
 //     for (let i = 0; i < Isotop_all.length; i++) {
-//       const element = Isotop_all[i];
-//       if(element.style.height = '0px'){
-//         element.style.display = "none"
-//           console.log('sa');
-//       }
+    //       const element = Isotop_all[i];
+    //       if(element.style.height = '0px'){
+        //         element.style.display = "none"
+        //           console.log('sa');
+        //       }
 //   }

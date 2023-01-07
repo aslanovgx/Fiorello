@@ -57,6 +57,8 @@ header {
 }
 
 main {
+    position: relative;
+
     .container {
         position: relative;
 
@@ -140,6 +142,14 @@ main {
         .nav_details-2 {
             @extend %nav-details-copy;
             gap: 33px;
+
+            li {
+                @extend %a-copy;
+            }
+
+            .active {
+                color: red;
+            }
         }
 
         .nav_details-3 {
@@ -154,25 +164,29 @@ main {
         }
 
         .isotop_card {
-          
+
             &:hover {
                 .img {
                     img {
                         transform: scale(1.03);
                     }
                 }
+
                 .isotop_details {
                     span {
                         transform: translateX(300px);
                     }
+
                     .span_hover {
                         transform: translateX(0px);
                     }
                 }
             }
+
             .img {
                 width: 245px;
                 margin: 0 auto;
+
                 img {
                     @extend %img-contain;
                     width: 100%;
@@ -185,9 +199,10 @@ main {
                 flex-direction: column;
                 margin-top: 20px;
                 position: relative;
-               overflow: hidden;
-               text-align: center;
-               width: 100%;
+                overflow: hidden;
+                text-align: center;
+                width: 100%;
+
                 a {
                     @extend %a-copy;
                     text-transform: uppercase;
@@ -200,14 +215,17 @@ main {
                     transition: 0.4s ease-in-out;
 
                 }
+
                 .span_hover {
                     position: absolute;
                     top: 24px;
                     left: calc((261px - 67px) / 2);
                     transform: translateX(300px);
                     transition: 0.4s ease-in-out;
+
                     span {
                         transition: 0.3s ease-in-out;
+
                         &:hover {
                             color: $secondary_color;
                         }
@@ -218,7 +236,80 @@ main {
         }
     }
 
+    #valentine {
+        background-color: $send_section;
+        padding: 80px 0;
 
+        .iframe_box {
+            position: relative;
+            overflow: hidden;
 
+            img {
+                width: 100%;
+                transition: 0.2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+
+            a {
+                @include _All ($bcg_color: white, $padding: 40px, $border_r: 50%, $txt_dec: none, $cursor: pointer);
+                position: absolute;
+                top: calc((100% - 100px) / 2);
+                left: calc((100% - 100px) / 2);
+
+                i {
+                    @extend %d-flex;
+                    @include _All ($color: $secondary_color, $f_size: 20px, $width: 20px, $height: 20px);
+                }
+            }
+        }
+
+        .iframe_right {
+            @extend %send_left-copy;
+            max-width: 465px;
+            margin: 0 auto;
+            h1 {
+                color: $iframe_right_h1_color;
+                span {
+                    color: $secondary_color;
+                }
+            }
+
+            .hand_items {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                li {
+                    img {
+                        @extend %img-contain;
+                        margin-right: 11px;
+                    }
+
+                    span {
+                        font-family: "Lora", serif;
+                        @include _All ($color: $text_color_gray, $l_height: 29px, $f_size: 17px, $f_weight: 400, $margin: 0 0 30px 0);
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    #iframe_fixed {
+
+        iframe {
+            display: none;
+            position: fixed;
+            top: calc((320px) / 2);
+            left: calc((100% - 300px) / 2);
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            z-index: 2;
+        }
+    }
 
 }

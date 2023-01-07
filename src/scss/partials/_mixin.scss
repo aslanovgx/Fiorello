@@ -135,3 +135,23 @@
 %span-copy {
     @include _All ($color: $span_color,$f_size: 12px);
 }
+%send_left-copy {
+    h1 {
+        // max-width: 347px;
+        font-family: 'Playfair Display', serif;
+        @include _All ($color: black, $l_height: 51px, $f_size: 41px, $f_weight: 400, $margin: 0 0 20px 0);
+
+        span {
+            font-family: 'Playfair Display', serif;
+            color: red;
+        }
+    }
+
+    p {
+        max-width: 402px;
+        font-family: 'Lora', serif;
+
+        @include _All ($color: $text_color_gray, $l_height: 29px, $f_size: 17px, $f_weight: 400, $margin: 0 0 30px 0);
+
+    }
+}
