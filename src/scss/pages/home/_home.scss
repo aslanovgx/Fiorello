@@ -270,8 +270,10 @@ main {
             @extend %send_left-copy;
             max-width: 465px;
             margin: 0 auto;
+
             h1 {
                 color: $iframe_right_h1_color;
+
                 span {
                     color: $secondary_color;
                 }
@@ -281,6 +283,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
+
                 li {
                     img {
                         @extend %img-contain;
@@ -293,6 +296,54 @@ main {
 
                     }
                 }
+            }
+        }
+
+    }
+
+    #expert {
+        padding: 80px 0;
+        h1,
+        p {
+            font-family: "Lora", serif;
+        }
+
+        .expert_header {
+            text-align: center;
+            h1 {
+                @extend %big-h1-copy;
+                color: $iframe_right_h1_color;
+            }
+            
+            p {
+                @extend %gray-p-copy;
+                max-width: 535px;
+                margin: 0 auto;
+            }
+        }
+        .expert_images {
+            .expert_img {
+                width: 222px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                img {
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
+            .expert_details {
+                @extend %d-flex;
+                flex-direction: column;
+                text-align: center;
+                a {
+                    @extend %a-copy;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                }
+                span {
+                    @extend %span-for-expert-copy;
+                }
+                
             }
         }
 

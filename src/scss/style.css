@@ -15,7 +15,7 @@ main #send .back_image_box img, main #send .send_right img {
   cursor: pointer;
 }
 
-main #valentine .iframe_box a i, main #isotope1 .isotop_card .isotop_details, header #main_nav .nav_details .special_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details, main #isotope1 .nav_details-3 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-2 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-3, main #isotope1 .nav_details-2 {
+main #expert .expert_images .expert_details, main #valentine .iframe_box a i, main #isotope1 .isotop_card .isotop_details, header #main_nav .nav_details .special_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details, main #isotope1 .nav_details-3 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-2 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-3, main #isotope1 .nav_details-2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ main #isotope1 .nav_details-3 .special_add_to_cart span, main #isotope1 .nav_det
   letter-spacing: 0.1em;
 }
 
-main #isotope1 .isotop_card .isotop_details a, main #isotope1 .nav_details-2 li {
+main #expert .expert_images .expert_details a, main #isotope1 .isotop_card .isotop_details a, main #isotope1 .nav_details-2 li {
   font-size: 12px;
   font-weight: 500;
   color: #1b1b1b;
@@ -93,13 +93,37 @@ main #valentine .iframe_right h1 span {
   color: red;
 }
 main #valentine .iframe_right p {
-  max-width: 402px;
   font-family: "Lora", serif;
   font-size: 17px;
   font-weight: 400;
   color: rgb(109, 106, 106);
   line-height: 29px;
   margin: 0 0 30px 0;
+}
+
+main #expert .expert_header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 400;
+  color: black;
+  line-height: 51px;
+  margin: 0 0 20px 0;
+}
+
+main #expert .expert_header p {
+  font-family: "Lora", serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(109, 106, 106);
+  line-height: 29px;
+  margin: 0 0 30px 0;
+}
+
+main #expert .expert_images .expert_details span {
+  font-size: 12px;
+  color: #afafaf;
+  text-align: center;
+  transition: 0.4s ease-in-out;
 }
 
 header #main_nav {
@@ -339,6 +363,40 @@ main #valentine .iframe_right .hand_items li span {
   color: rgb(109, 106, 106);
   line-height: 29px;
   margin: 0 0 30px 0;
+}
+main #expert {
+  padding: 80px 0;
+}
+main #expert h1,
+main #expert p {
+  font-family: "Lora", serif;
+}
+main #expert .expert_header {
+  text-align: center;
+}
+main #expert .expert_header h1 {
+  color: rgba(0, 0, 0, 0.842);
+}
+main #expert .expert_header p {
+  max-width: 535px;
+  margin: 0 auto;
+}
+main #expert .expert_images .expert_img {
+  width: 222px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+main #expert .expert_images .expert_img img {
+  width: 100%;
+  cursor: pointer;
+}
+main #expert .expert_images .expert_details {
+  flex-direction: column;
+  text-align: center;
+}
+main #expert .expert_images .expert_details a {
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }
 main #iframe_fixed iframe {
   display: none;

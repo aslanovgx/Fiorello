@@ -75,18 +75,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 %nav-details-copy {
     @extend %d-flex;
     justify-content: flex-start;
     gap: 50px;
-    
+
     li {
         a {
             @include _All($f_size: 12px,
-            $f_weight: 500,
+                $f_weight: 500,
                 $color: $main_color,
                 $l_height: 22px,
                 $letter_spacing: 0.1em,
@@ -125,16 +125,18 @@
 
 %a-copy {
     @include _All($f_size: 12px,
-    $f_weight: 500,
-    $color: $main_color,
-    $l_height: 22px,
-    $letter_spacing: 0.1em,
-    $txt_dec: none);
+        $f_weight: 500,
+        $color: $main_color,
+        $l_height: 22px,
+        $letter_spacing: 0.1em,
+        $txt_dec: none);
     cursor: pointer;
 }
+
 %span-copy {
-    @include _All ($color: $span_color,$f_size: 12px);
+    @include _All ($color: $span_color, $f_size: 12px);
 }
+
 %send_left-copy {
     h1 {
         // max-width: 347px;
@@ -148,10 +150,25 @@
     }
 
     p {
-        max-width: 402px;
+        // max-width: 402px;
         font-family: 'Lora', serif;
 
         @include _All ($color: $text_color_gray, $l_height: 29px, $f_size: 17px, $f_weight: 400, $margin: 0 0 30px 0);
 
     }
+}
+
+%big-h1-copy {
+    font-family: 'Playfair Display', serif;
+    @include _All ($color: black, $l_height: 51px, $f_size: 38px, $f_weight: 400, $margin: 0 0 20px 0);
+}
+
+%gray-p-copy {
+    font-family: 'Lora', serif;
+
+    @include _All ($color: $text_color_gray, $l_height: 29px, $f_size: 17px, $f_weight: 400, $margin: 0 0 30px 0);
+}
+%span-for-expert-copy {
+    @include _All ($color: $span_color, $f_size: 12px, $txt_align: center);
+    transition: 0.4s ease-in-out;
 }
