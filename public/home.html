@@ -11,7 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./../src/scss/style.css">
-
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body id="body">
@@ -395,12 +396,6 @@
                 </div>
             </div>
         </section>
-        <section id="iframe_fixed">
-            <iframe id="iframe_f" src="https://www.youtube.com/embed/K-0cjGCNYfs" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </section>
         <section id="blog">
             <div class="container">
                 <div class="row mb-5">
@@ -464,12 +459,174 @@
                 </div>
             </div>
         </section>
+        <section id="swiper_navigation">
+            <!-- Swiper -->
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-9">
+                        <div class="swiper swiper-navigate">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/testimonial-img-1.png"
+                                        alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget.</p>
+                                    <div class="swiper_navigate_details">
+                                        <a href="#">Jasmine White</a>
+
+                                        <span>Florist</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/testimonial-img-2.png"
+                                        alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget.</p>
+                                    <div class="swiper_navigate_details">
+                                        <a href="#">Anna Barnes</a>
+
+                                        <span>Florist</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <i class="fa-solid fa-arrow-left-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="iframe_fixed">
+            <iframe id="iframe_f" src="https://www.youtube.com/embed/K-0cjGCNYfs" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
     </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row row_foot">
+                <div class="col-lg-3">
+                    <ul class="footer_box">
+                        <li>
+                            <a href="#">Customer Service</a>
+                        </li>
+                        <li>
+                            <span>Help & Contact Us</span>
+                        </li>
+                        <li>
+                            <span>Returns & Refunds</span>
+                        </li>
+                        <li>
+                            <span>Online Stores</span>
+                        </li>
+                        <li>
+                            <span>Terms & Conditions</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="footer_box">
+                        <li>
+                            <a href="#">COMPANY</a>
+                        </li>
+                        <li>
+                            <span>About Us</span>
+                        </li>
+                        <li>
+                            <span>Blog</span>
+                        </li>
+                        <li>
+                            <span>Order Tracking</span>
+                        </li>
+                        <li>
+                            <span>FAQ Page</span>
+                        </li>
+                        <li>
+                            <span>Contact Us</span>
+                        </li>
+                        <li>
+                            <span>Login</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="footer_box">
+                        <li>
+                            <a href="#">SOCIAL MEDIA</a>
+                        </li>
+                        <li>
+                            <span>Twitter</span>
+                        </li>
+                        <li>
+                            <span>Instagram</span>
+                        </li>
+                        <li>
+                            <span>Tumblr</span>
+                        </li>
+                        <li>
+                            <span>Pinterest</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="footer_box">
+                        <li>
+                            <a href="#">ARCHIVE</a>
+                        </li>
+                        <li>
+                            <span>Designer Shoes</span>
+                        </li>
+                        <li>
+                            <span>Gallery</span>
+                        </li>
+                        <li>
+                            <span>Pricing</span>
+                        </li>
+                        <li>
+                            <span>Feature Index</span>
+                        </li>
+                        <li>
+                            <span>Login</span>
+                        </li>
+                        <li>
+                            <span>Help & Support</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-lg-4">
+                    <div class="footer_left">
+                        <span>© 2018</span>
+                        <span>Qode Interactive</span>
+                        <span>,All Rights Reserved</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer_centre">
+                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/footer-bottom-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer_right">
+                        <span>INSTAGRAM</span>
+                        <span>FACEBOOK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
     <!-- Swiper JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

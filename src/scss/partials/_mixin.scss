@@ -185,3 +185,19 @@
         margin: 0 auto;
     }
 }
+%expert_details-copy {
+    @extend %d-flex;
+                flex-direction: column;
+                text-align: center;
+
+                a {
+                    @extend %a-copy;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                }
+
+                span {
+                    @extend %span-for-expert-copy;
+                }
+}

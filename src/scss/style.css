@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Michroma&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-main #valentine .iframe_right .hand_items li img, main #isotope1 .isotop_card .img img, main #send .send_left .send_img img, header #main_nav .nav_left img {
+footer .footer_centre img, main #swiper_navigation .swiper .swiper-slide img, main #valentine .iframe_right .hand_items li img, main #isotope1 .isotop_card .img img, main #send .send_left .send_img img, header #main_nav .nav_left img {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
@@ -15,7 +15,7 @@ main #send .back_image_box img, main #send .send_right img {
   cursor: pointer;
 }
 
-main #join .join_box form, main #expert .expert_images .expert_details, main #valentine .iframe_box a i, main #isotope1 .isotop_card .isotop_details, header #main_nav .nav_details .special_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details, main #isotope1 .nav_details-3 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-2 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-3, main #isotope1 .nav_details-2 {
+main #join .join_box form, main #expert .expert_images .expert_details, main #valentine .iframe_box a i, main #isotope1 .isotop_card .isotop_details, header #main_nav .nav_details .special_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details, main #swiper_navigation .swiper .swiper-slide .swiper_navigate_details, main #isotope1 .nav_details-3 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-2 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-3, main #isotope1 .nav_details-2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ main #isotope1 .nav_details-3 .special_add_to_cart span, main #isotope1 .nav_det
   letter-spacing: 0.1em;
 }
 
-main #blog .blog_box .blog_img .blog_time a, main #join .join_box form button, main #expert .expert_images .expert_details a, main #isotope1 .isotop_card .isotop_details a, main #isotope1 .nav_details-2 li {
+footer .footer_right span, footer .footer_box li a, main #blog .blog_box .blog_img .blog_time a, main #join .join_box form button, main #expert .expert_images .expert_details a, main #isotope1 .isotop_card .isotop_details a, main #isotope1 .nav_details-2 li, main #swiper_navigation .swiper .swiper-slide .swiper_navigate_details a {
   font-size: 12px;
   font-weight: 500;
   color: #1b1b1b;
@@ -78,6 +78,11 @@ main #blog .blog_box .blog_img .blog_time a, main #join .join_box form button, m
   text-decoration: none;
   letter-spacing: 0.1em;
   cursor: pointer;
+}
+
+footer .footer_left span {
+  font-size: 12px;
+  color: #afafaf;
 }
 
 main #valentine .iframe_right h1 {
@@ -119,7 +124,7 @@ main #expert .expert_header p, main #blog .blog_box .blog_details p, main #blog 
   margin: 0 0 30px 0;
 }
 
-main #expert .expert_images .expert_details span {
+footer .footer_box li span, main #expert .expert_images .expert_details span, main #swiper_navigation .swiper .swiper-slide .swiper_navigate_details span {
   font-size: 12px;
   color: #afafaf;
   text-align: center;
@@ -137,6 +142,15 @@ main #blog .blog_box .blog_details p, main #blog .blog_header p {
   margin: 0 auto;
 }
 
+main #swiper_navigation .swiper .swiper-slide .swiper_navigate_details {
+  flex-direction: column;
+  text-align: center;
+}
+main #swiper_navigation .swiper .swiper-slide .swiper_navigate_details a {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
 header #main_nav {
   padding: 45px 0;
 }
@@ -462,6 +476,7 @@ main #join .join_box form button:hover {
 }
 main #blog {
   padding: 100px 0;
+  background-color: #f3f3f3;
 }
 main #blog .blog_box .blog_img {
   overflow: hidden;
@@ -499,6 +514,46 @@ main #blog .blog_box .blog_details p {
   max-width: 264px;
   font-size: 15px;
 }
+main #swiper_navigation {
+  padding: 100px 0;
+}
+main #swiper_navigation .swiper {
+  width: 100%;
+  height: 100%;
+}
+main #swiper_navigation .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #swiper_navigation .swiper .swiper-slide p {
+  font-family: "Lora", serif;
+  font-style: italic;
+  color: #4b4747;
+  font-size: 24px;
+  line-height: 1.5em;
+  max-width: 496px;
+  margin: 30px 0;
+}
+main #swiper_navigation .swiper-button-next i,
+main #swiper_navigation .swiper-button-prev i {
+  color: gray;
+  font-size: 20px;
+}
+main #swiper_navigation .swiper-button-next::after,
+main #swiper_navigation .swiper-button-prev::after {
+  content: "";
+  display: none;
+}
+main #swiper_navigation .swiper-button-prev::after {
+  content: "";
+  display: none;
+}
 main #iframe_fixed iframe {
   display: none;
   position: fixed;
@@ -508,6 +563,49 @@ main #iframe_fixed iframe {
   height: 200px;
   margin: 0 auto;
   z-index: 2;
+}
+
+footer {
+  background-color: #fefaf3;
+  padding: 70px 0 0 0;
+}
+footer .row_foot {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+footer .footer_box {
+  padding-bottom: 70px;
+}
+footer .footer_box li {
+  margin: 0 0 5px 0;
+}
+footer .footer_box li a {
+  cursor: pointer;
+  color: black;
+  text-transform: uppercase;
+}
+footer .footer_box li span {
+  color: #837d7d;
+}
+footer .footer_box li:first-child {
+  margin-bottom: 25px;
+}
+footer .footer_left span:nth-child(2) {
+  color: rgba(0, 0, 0, 0.842);
+}
+footer .footer_centre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer .footer_right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+footer .footer_right span {
+  color: rgba(87, 86, 86, 0.448);
+  font-size: 10px;
 }
 
 * {
