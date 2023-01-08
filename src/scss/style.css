@@ -106,7 +106,7 @@ main #valentine .iframe_right p {
   margin: 0 0 30px 0;
 }
 
-main #join .join_box h1, main #expert .expert_header h1, main #blog .blog_box .blog_details h1, main #blog .blog_header h1 {
+main #join .join_box h1, main #expert .expert_header h1, header #main_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 span, main #blog .blog_box .blog_details h1, main #blog .blog_header h1 {
   font-family: "Playfair Display", serif;
   font-size: 38px;
   font-weight: 400;
@@ -151,11 +151,11 @@ main #swiper_navigation .swiper .swiper-slide .swiper_navigate_details a {
   margin-bottom: 5px;
   cursor: pointer;
 }
-header #main_nav {
-  padding: 45px 0;
-}
 header #main_nav .nav_left img {
   width: 80%;
+}
+header #main_nav .row_nav {
+  position: relative;
 }
 header #main_nav .nav_details {
   justify-content: flex-start;
@@ -163,6 +163,7 @@ header #main_nav .nav_details {
 }
 header #main_nav .nav_details li {
   position: relative;
+  padding: 45px 0;
 }
 header #main_nav .nav_details li a {
   font-size: 12px;
@@ -172,8 +173,8 @@ header #main_nav .nav_details li a {
   text-decoration: none;
   letter-spacing: 0.1em;
 }
-header #main_nav .nav_details li:nth-child(1) a {
-  border-bottom: 1px solid #1b1b1b;
+header #main_nav .nav_details li #home_id {
+  border-bottom: 1px solid rgb(109, 106, 106);
 }
 header #main_nav .nav_details li .nav_home_details {
   height: 0;
@@ -181,14 +182,15 @@ header #main_nav .nav_details li .nav_home_details {
   width: 240px;
   background-color: #fff;
   position: absolute;
-  top: 67px;
+  top: 107px;
   left: -26px;
   z-index: 8;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
   padding: 0 0 0 26px;
 }
 header #main_nav .nav_details li .nav_home_details li {
-  margin-bottom: 13px;
+  margin-bottom: 17px;
+  padding: 0;
 }
 header #main_nav .nav_details li .nav_home_details li a {
   position: relative;
@@ -198,14 +200,67 @@ header #main_nav .nav_details li .nav_home_details li a {
   letter-spacing: 0px;
   transition: 0.3s ease-in-out;
 }
+header #main_nav .nav_details li .nav_home_details li #main_home_id {
+  border-bottom: 1px solid rgb(109, 106, 106);
+}
 header #main_nav .nav_details li .nav_home_details li:first-child {
   padding-top: 20px;
 }
-header #main_nav .nav_details #home_a:hover .nav_home_details {
-  height: 300px;
+header #main_nav .nav_details #home_li:hover .nav_home_details {
+  height: 290px;
 }
-header #main_nav .nav_details #pages_a:hover .nav_home_details {
-  height: 200px;
+header #main_nav .nav_details #pages_li:hover .nav_home_details {
+  height: 140px;
+}
+header #main_nav .nav_details #portfolio_li:hover .nav_home_details {
+  height: 140px;
+}
+header #main_nav .nav_details #blog_li:hover .nav_home_details {
+  height: 140px;
+}
+header #main_nav .nav_details #elements_li:hover .nav_home_details {
+  height: 140px;
+}
+header #main_nav .nav_details #shop_li {
+  position: static;
+}
+header #main_nav .nav_details #shop_li:hover .nav_all_ul {
+  height: 940px;
+}
+header #main_nav .nav_details #shop_li .nav_all_ul {
+  height: 0;
+  display: flex;
+  justify-content: start;
+  position: absolute;
+  gap: 150px;
+  top: 100px;
+  left: 10px;
+  z-index: 8;
+  transition: 0.4s ease-in-out;
+  padding: 0 0 0 26px;
+  width: 1140px;
+  background-color: #fff;
+  overflow: hidden;
+}
+header #main_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 li {
+  margin-bottom: 17px;
+  padding: 0;
+}
+header #main_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 li a {
+  position: relative;
+  border: none;
+  font-size: 13px;
+  color: rgb(109, 106, 106);
+  letter-spacing: 0px;
+  transition: 0.3s ease-in-out;
+}
+header #main_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 li:first-child {
+  padding-top: 20px;
+}
+header #main_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 span {
+  color: rgba(0, 0, 0, 0.842);
+  font-size: 22px;
+  font-weight: 500;
 }
 header #main_nav .nav_details .special_add_to_cart i {
   font-size: 19px;

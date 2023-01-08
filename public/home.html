@@ -20,7 +20,7 @@
     <header>
         <nav id="main_nav">
             <div class="container">
-                <div class="row justify-content-center align-items-center">
+                <div class="row row_nav justify-content-center align-items-center">
                     <div class="col-lg-3">
                         <div class="nav_left">
                             <img src="./../src/images/h2-logo-1.png" alt="">
@@ -28,11 +28,11 @@
                     </div>
                     <div class="col-lg-9">
                         <ul class="nav_details">
-                            <li id="home_a">
-                                <a href="#">HOME</a>
+                            <li id="home_li">
+                                <a id="home_id" href="#">HOME</a>
                                 <ul class="nav_home_details">
                                     <li>
-                                        <a href="#">Main Home</a>
+                                        <a id="main_home_id" href="#">Main Home</a>
                                     </li>
                                     <li>
                                         <a href="#">Grid Home</a>
@@ -54,7 +54,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li id="pages_a">
+                            <li id="pages_li">
                                 <a href="#">PAGES</a>
                                 <ul class="nav_home_details">
                                     <li>
@@ -66,23 +66,115 @@
                                     <li>
                                         <a href="#">Contact Us</a>
                                     </li>
-                                </ul>   
+                                </ul>
                             </li>
-                            <li>
+                            <li id="shop_li">
                                 <a href="#">SHOP</a>
-                                <ul class="nav_home_details">
-                                    <li>
-                                        <a href="#">About us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">FAQ Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contact Us</a>
-                                    </li>
-                                </ul>  
+                                <div class="nav_all_ul">
+                                    <ul class="nav_home_details2">
+                                        <li>
+                                            <span>Product Types</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">Standard Product</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Grouped Product</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Variable Product</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Virtual Product</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">External Product</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Downloadable Product</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">On Sale Product</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Out Of Stock Product</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">New Product</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav_home_details2">
+                                        <li>
+                                            <span>Shop Pages</span>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">My Account</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cart</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Checkout</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Orders</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Downloads</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav_home_details2">
+                                        <li>
+                                            <span>Shop Types</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">Product List</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Without Sidebar</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">With Category Filter</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">With Ordering Filter</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shop Carousel</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Product Categories</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Single Category</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav_home_details2">
+                                        <li>
+                                            <span>Shop Layouts</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">Two Columns Grid</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Three Columns Grid</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Four Columns Grid</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Five Columns Wide</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Six Columns Wide</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
                             </li>
-                            <li>
+                            <li id="portfolio_li">
                                 <a href="#">PORTFOLIO</a>
                                 <ul class="nav_home_details">
                                     <li>
@@ -94,9 +186,9 @@
                                     <li>
                                         <a href="#">Contact Us</a>
                                     </li>
-                                </ul>  
+                                </ul>
                             </li>
-                            <li>
+                            <li id="blog_li">
                                 <a href="#">BLOG</a>
                                 <ul class="nav_home_details">
                                     <li>
@@ -108,9 +200,9 @@
                                     <li>
                                         <a href="#">Contact Us</a>
                                     </li>
-                                </ul>  
+                                </ul>
                             </li>
-                            <li>
+                            <li id="elements_li">
                                 <a href="#">ELEMENTS</a>
                                 <ul class="nav_home_details">
                                     <li>
@@ -122,7 +214,7 @@
                                     <li>
                                         <a href="#">Contact Us</a>
                                     </li>
-                                </ul>  
+                                </ul>
                             </li>
                             <li class="special_add_to_cart">
 
@@ -688,7 +780,8 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="footer_centre">
-                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/footer-bottom-1.png" alt="">
+                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/footer-bottom-1.png"
+                            alt="">
                     </div>
                 </div>
                 <div class="col-lg-4">

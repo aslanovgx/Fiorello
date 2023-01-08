@@ -1,12 +1,16 @@
 header {
     #main_nav {
-        padding: 45px 0;
+        // padding: 45px 0;
 
         .nav_left {
             img {
                 @extend %img-contain;
                 width: 80%;
             }
+        }
+
+        .row_nav {
+            position: relative;
         }
 
         .nav_details {
@@ -16,6 +20,7 @@ header {
 
             li {
                 position: relative;
+                padding: 45px 0;
 
                 a {
                     @include _All($f_size: 12px,
@@ -26,43 +31,34 @@ header {
                         $txt_dec: none);
                 }
 
-                &:nth-child(1) {
-                    a {
-                        border-bottom: 1px solid $main_color;
-                    }
+                #home_id {
+                    border-bottom: 1px solid $text_color_gray;
                 }
+
 
                 .nav_home_details {
                     height: 0;
                     overflow: hidden;
                     @include _All($width: 240px, $bcg_color: #fff);
                     position: absolute;
-                    top: 67px;
+                    top: 107px;
                     left: -26px;
                     z-index: 8;
-                    transition: 0.3s ease-in-out;
+                    transition: 0.4s ease-in-out;
                     padding: 0 0 0 26px;
 
                     li {
-                        margin-bottom: 13px;
+                        margin-bottom: 17px;
+                        padding: 0;
 
                         a {
                             position: relative;
                             @include _All($f_size: 13px, $border: none, $color: $text_color_gray, $letter_spacing: 0px);
                             transition: 0.3s ease-in-out;
+                        }
 
-                            // &::before {
-                            //     content: "";
-                            //     position: absolute;
-                            //     left: 0;
-                            //     bottom: -1px;
-                            //     width: 12px;
-                            //     height: 1px;
-                            //     background-color: $text_color_gray;
-                            //     :hover {
-                            //         width: 200px;
-                            //     }
-                            // }
+                        #main_home_id {
+                            border-bottom: 1px solid $text_color_gray;
                         }
 
                         &:first-child {
@@ -73,20 +69,98 @@ header {
                 }
             }
 
-            #home_a {
+            #home_li {
                 &:hover {
                     .nav_home_details {
-                        height: 300px;
+                        height: 290px;
                     }
                 }
             }
-            #pages_a {
+
+            #pages_li {
                 &:hover {
                     .nav_home_details {
-                        height: 200px;
+                        height: 140px;
                     }
                 }
             }
+
+            #portfolio_li {
+                &:hover {
+                    .nav_home_details {
+                        height: 140px;
+                    }
+                }
+            }
+
+            #blog_li {
+                &:hover {
+                    .nav_home_details {
+                        height: 140px;
+                    }
+                }
+            }
+
+            #elements_li {
+                &:hover {
+                    .nav_home_details {
+                        height: 140px;
+                    }
+                }
+            }
+
+            #shop_li {
+                position: static;
+
+                &:hover {
+                    .nav_all_ul {
+                        height: 940px;
+                    }
+                }
+
+                .nav_all_ul {
+                    height: 0;
+                    display: flex;
+                    justify-content: start;
+                    position: absolute;
+                    gap: 150px;
+                    top: 100px;
+                    left: 10px;
+                    z-index: 8;
+                    transition: 0.4s ease-in-out;
+                    padding: 0 0 0 26px;
+                    @include _All($width: 1140px, $bcg_color: #fff);
+                    overflow: hidden;
+
+                    .nav_home_details2 {
+                        li {
+                            margin-bottom: 17px;
+                            padding: 0;
+
+                            a {
+                                position: relative;
+                                @include _All($f_size: 13px, $border: none, $color: $text_color_gray, $letter_spacing: 0px);
+                                transition: 0.3s ease-in-out;
+                            }
+
+                            &:first-child {
+                                padding-top: 20px;
+                            }
+
+                        }
+
+                        span {
+                            @extend %big-h1-copy;
+                            color: $iframe_right_h1_color;
+                            font-size: 22px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+
+            }
+
 
             .special_add_to_cart {
                 i {
