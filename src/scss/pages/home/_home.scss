@@ -15,6 +15,8 @@ header {
             gap: 50px;
 
             li {
+                position: relative;
+
                 a {
                     @include _All($f_size: 12px,
                         $f_weight: 500,
@@ -22,6 +24,67 @@ header {
                         $l_height: 22px,
                         $letter_spacing: 0.1em,
                         $txt_dec: none);
+                }
+
+                &:nth-child(1) {
+                    a {
+                        border-bottom: 1px solid $main_color;
+                    }
+                }
+
+                .nav_home_details {
+                    height: 0;
+                    overflow: hidden;
+                    @include _All($width: 240px, $bcg_color: #fff);
+                    position: absolute;
+                    top: 67px;
+                    left: -26px;
+                    z-index: 8;
+                    transition: 0.3s ease-in-out;
+                    padding: 0 0 0 26px;
+
+                    li {
+                        margin-bottom: 13px;
+
+                        a {
+                            position: relative;
+                            @include _All($f_size: 13px, $border: none, $color: $text_color_gray, $letter_spacing: 0px);
+                            transition: 0.3s ease-in-out;
+
+                            // &::before {
+                            //     content: "";
+                            //     position: absolute;
+                            //     left: 0;
+                            //     bottom: -1px;
+                            //     width: 12px;
+                            //     height: 1px;
+                            //     background-color: $text_color_gray;
+                            //     :hover {
+                            //         width: 200px;
+                            //     }
+                            // }
+                        }
+
+                        &:first-child {
+                            padding-top: 20px;
+                        }
+
+                    }
+                }
+            }
+
+            #home_a {
+                &:hover {
+                    .nav_home_details {
+                        height: 300px;
+                    }
+                }
+            }
+            #pages_a {
+                &:hover {
+                    .nav_home_details {
+                        height: 200px;
+                    }
                 }
             }
 
@@ -589,23 +652,28 @@ footer {
             &:nth-child(2) {
                 color: $iframe_right_h1_color;
             }
+
             @extend %span-copy;
 
         }
     }
+
     .footer_centre {
         width: 100%;
         display: flex;
         justify-content: center;
+
         img {
             @extend %img-contain;
         }
     }
+
     .footer_right {
         width: 100%;
         display: flex;
         justify-content: flex-end;
         gap: 30px;
+
         span {
             @extend %a-copy;
             color: $footer_right_span_color;

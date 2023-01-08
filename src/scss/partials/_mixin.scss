@@ -168,36 +168,85 @@
 
     @include _All ($color: $text_color_gray, $l_height: 29px, $f_size: 17px, $f_weight: 400, $margin: 0 0 30px 0);
 }
+
 %span-for-expert-copy {
     @include _All ($color: $span_color, $f_size: 12px, $txt_align: center);
     transition: 0.4s ease-in-out;
 }
+
 %expert_header-copy {
     text-align: center;
+
     h1 {
         @extend %big-h1-copy;
         color: $iframe_right_h1_color;
     }
-    
+
     p {
         @extend %gray-p-copy;
         max-width: 535px;
         margin: 0 auto;
     }
 }
+
 %expert_details-copy {
     @extend %d-flex;
-                flex-direction: column;
-                text-align: center;
+    flex-direction: column;
+    text-align: center;
 
-                a {
-                    @extend %a-copy;
-                    text-transform: uppercase;
-                    margin-bottom: 5px;
-                    cursor: pointer;
-                }
+    a {
+        @extend %a-copy;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
 
-                span {
-                    @extend %span-for-expert-copy;
-                }
+    span {
+        @extend %span-for-expert-copy;
+    }
+}
+
+%nav_home_details-copy {
+    height: 0;
+    overflow: hidden;
+    @include _All($width: 240px, $bcg_color: #fff);
+    position: absolute;
+    top: 67px;
+    left: -26px;
+    z-index: 8;
+    transition: 0.3s ease-in-out;
+    padding: 0 0 0 26px;
+
+    li {
+        margin-bottom: 13px;
+
+        a {
+            position: relative;
+            @include _All($f_size: 13px, $border: none, $color: $text_color_gray, $letter_spacing: 0px);
+            transition: 0.3s ease-in-out;
+
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     left: 0;
+            //     bottom: -1px;
+            //     width: 12px;
+            //     height: 1px;
+            //     background-color: $text_color_gray;
+            //     :hover {
+            //         width: 200px;
+            //     }
+            // }
+        }
+
+        &:first-child {
+            padding-top: 20px;
+
+            a {
+                border-bottom: 1px solid $main_color;
+            }
+        }
+
+    }
+
 }
