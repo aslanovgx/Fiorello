@@ -1,10 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Michroma&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-main #contact_touch .touch_left .touch_img img {
+main #contact_touch .touch_left .touch_details .logo img, main #contact_touch .touch_left .touch_img img {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
   cursor: pointer;
+}
+
+main #contact_touch .touch_right button {
+  font-size: 12px;
+  font-weight: 500;
+  color: #1b1b1b;
+  line-height: 22px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+main #contact_touch .touch_right h1, main #contact_touch .touch_left .touch_details h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 41px;
+  font-weight: 400;
+  color: black;
+  line-height: 51px;
+  margin: 0 0 20px 0;
+}
+main #contact_touch .touch_right h1 span, main #contact_touch .touch_left .touch_details h1 span {
+  font-family: "Playfair Display", serif;
+  color: red;
+}
+main #contact_touch .touch_right p, main #contact_touch .touch_left .touch_details p {
+  font-family: "Lora", serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(109, 106, 106);
+  line-height: 29px;
+  margin: 0 0 30px 0;
+}
+
+main #contact_touch .touch_right {
+  justify-content: flex-start;
+}
+main #contact_touch .touch_right input {
+  font-size: 12px;
+  color: #959595;
+  border: none;
+  padding: 21px;
+}
+main #contact_touch .touch_right input::-moz-placeholder {
+  font-size: 12px;
+  color: #959595;
+}
+main #contact_touch .touch_right input:-ms-input-placeholder {
+  font-size: 12px;
+  color: #959595;
+}
+main #contact_touch .touch_right input::placeholder {
+  font-size: 12px;
+  color: #959595;
+}
+main #contact_touch .touch_right button {
+  border: none;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", serif;
+  background-color: #f34f3f;
+  height: 60px;
+  transition: 0.5s ease-in-out;
+}
+main #contact_touch .touch_right button:hover {
+  background-color: rgb(235, 38, 38);
 }
 
 main #contact_map .map_box {
@@ -28,11 +94,61 @@ main #contact_touch {
 }
 main #contact_touch .touch_left {
   background-color: #f8f8f8;
+  padding: 50px 40px;
+  text-align: center;
 }
 main #contact_touch .touch_left .touch_img {
   width: 154px;
+  margin: 0 auto 20px auto;
+}
+main #contact_touch .touch_left .touch_details h1 {
+  font-size: 38px;
+  color: rgba(0, 0, 0, 0.842);
+}
+main #contact_touch .touch_right {
+  max-width: 490px;
   margin: 0 auto;
 }
+main #contact_touch .touch_right h1 {
+  font-size: 38px;
+  color: rgba(0, 0, 0, 0.842);
+}
+main #contact_touch .touch_right p {
+  font-size: 15px;
+}
+main #contact_touch .touch_right input {
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+main #contact_touch .touch_right button {
+  padding: 10px 35px;
+}
+main #contact_touch .touch_right textarea {
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #959595;
+  border: none;
+  padding: 21px;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 3px;
+  display: block;
+}
+main #contact_touch .touch_right textarea::-moz-placeholder {
+  font-size: 12px;
+  color: #959595;
+}
+main #contact_touch .touch_right textarea:-ms-input-placeholder {
+  font-size: 12px;
+  color: #959595;
+}
+main #contact_touch .touch_right textarea::placeholder {
+  font-size: 12px;
+  color: #959595;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;

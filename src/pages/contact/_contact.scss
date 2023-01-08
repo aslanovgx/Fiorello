@@ -20,17 +20,74 @@ main {
             }
         }
     }
+
     #contact_touch {
         margin-top: 100px;
+
         .touch_left {
-           background-color: $contact_branch_bcg_color;
-        .touch_img {
-            width: 154px;
-            margin: 0 auto;
-            img {
-                @extend %img-contain;
+            background-color: $contact_branch_bcg_color;
+            padding: 50px 40px;
+            text-align: center;
+
+            .touch_img {
+                width: 154px;
+                margin: 0 auto 20px auto;
+
+                img {
+                    @extend %img-contain;
+                }
+            }
+
+            .touch_details {
+                @extend %send_left-copy;
+
+                h1 {
+                    font-size: 38px;
+                    color: $iframe_right_h1_color;
+                }
+
+                .logo {
+                    img {
+                        @extend %img-contain;
+
+                    }
+                }
             }
         }
-       }
+
+        .touch_right {
+            max-width: 490px;
+            margin: 0 auto;
+            @extend %send_left-copy;
+            h1 {
+                font-size: 38px;
+                color: $iframe_right_h1_color;
+            }
+            p {
+                font-size: 15px;
+            }
+            @extend %form-copy;
+            input {
+                width: 100%;
+                border: 1px solid $border_bottom_color;
+                border-radius: 3px;
+                margin-bottom: 20px;
+            }
+            button {
+                padding: 10px 35px;
+            }
+            textarea {
+                margin-bottom: 20px;
+                @include _All($color: $input_color, $f_size: 12px);
+                @include _All($padding: 21px, $border: none);
+                width: 100%;
+                border: 1px solid $border_bottom_color;
+                border-radius: 3px;
+                display: block;
+                &::placeholder {
+                    @include _All($color: $input_color, $f_size: 12px);
+                }
+            }
+        }
     }
 }

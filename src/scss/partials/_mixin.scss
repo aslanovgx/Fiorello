@@ -250,3 +250,32 @@
     }
 
 }
+
+%form-copy {
+    // @extend %d-flex;
+    justify-content: flex-start;
+
+    input {
+        // width: 72%;
+        @include _All($color: $input_color, $f_size: 12px);
+        @include _All($padding: 21px, $border: none);
+
+        &::placeholder {
+            @include _All($color: $input_color, $f_size: 12px);
+        }
+    }
+    
+    button {
+        // width: 28%;
+        @extend %a-copy;
+        @include _All($f_size: 12px, $color: #fff, $border: none, $txt_transform: uppercase);
+        font-family: "Montserrat", serif;
+        background-color: $secondary_color;
+        height: 60px;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            background-color: rgb(235, 38, 38);
+        }
+    }
+}
