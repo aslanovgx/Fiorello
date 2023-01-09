@@ -142,6 +142,11 @@ header #main_nav .nav_details {
     display: none;
   }
 }
+@media (min-width: 1337px) {
+  header #main_nav .nav_details {
+    justify-content: end;
+  }
+}
 header #main_nav .nav_details li {
   position: relative;
   padding: 45px 0;
@@ -727,6 +732,11 @@ main #desc_cards .isotop_card .img {
 main #desc_cards .isotop_card .img img {
   width: 100%;
   transition: 0.3s ease-in-out;
+}
+@media (min-width: 1398px) {
+  main #desc_cards .isotop_card .img img {
+    width: 295px;
+  }
 }
 main #desc_cards .isotop_card .isotop_details {
   flex-direction: column;

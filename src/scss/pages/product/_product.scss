@@ -34,6 +34,10 @@ header {
                 display: none;
 
             }
+            @media (min-width: 1337px) {
+                justify-content: end;
+
+            }
 
             li {
                 position: relative;
@@ -766,6 +770,9 @@ main {
                     @extend %img-contain;
                     width: 100%;
                     transition: 0.3s ease-in-out;
+                    @media (min-width: 1398px) {
+                        width: 295px;
+                    }
                 }
             }
 
