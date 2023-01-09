@@ -619,9 +619,7 @@ main {
 
         .isotop_card {
             margin: 0;
-            @media (max-width: 776px) {
-                width: 100%;
-            }
+
             &:hover {
                 .img {
                     img {
@@ -1030,3 +1028,85 @@ main {
     }
 }
 
+footer {
+    background-color: $footer_background;
+    padding: 70px 0 0 0;
+
+   @media (max-width: 776px) {
+    .col-lg-3 {
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: ;
+    }
+    .col-lg-4 {
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        .footer_right {
+            justify-content: center;
+        }
+    }
+   }
+
+    .row_foot {
+        border-bottom: 1px solid $border_bottom_color;
+    }
+
+    .footer_box {
+        padding-bottom: 70px;
+
+        li {
+            margin: 0 0 5px 0;
+
+            a {
+                @extend %a-copy;
+                @include _All($txt_transform: uppercase, $cursor: pointer, $color: black);
+
+            }
+
+            span {
+                @extend %span-for-expert-copy;
+                color: $footer_span_color;
+            }
+
+            &:first-child {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .footer_left {
+        span {
+            &:nth-child(2) {
+                color: $iframe_right_h1_color;
+            }
+
+            @extend %span-copy;
+
+        }
+    }
+
+    .footer_centre {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            @extend %img-contain;
+        }
+    }
+
+    .footer_right {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+
+        span {
+            @extend %a-copy;
+            color: $footer_right_span_color;
+            font-size: 10px;
+        }
+    }
+}

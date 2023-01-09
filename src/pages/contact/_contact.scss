@@ -251,7 +251,7 @@ header {
             li {
                 i {
                     display: none;
-
+cursor: pointer;
                     @media (max-width: 1204px) {
                         display: block;
                     }
@@ -368,6 +368,7 @@ header {
 
                 i {
                     font-size: 18px;
+                    cursor: pointer;
                 }
             }
 
@@ -557,6 +558,10 @@ main {
             max-width: 490px;
             margin: 0 auto;
             @extend %send_left-copy;
+            @media (max-width: 992px) {
+                text-align: center;
+                margin-top: 30px;
+            }
             h1 {
                 font-size: 38px;
                 color: $iframe_right_h1_color;
@@ -612,6 +617,10 @@ footer {
         display: inline-flex;
         justify-content: center;
         text-align: center;
+    }
+    .row_em {
+        justify-content: center;
+        gap: 20px;
     }
    }
 

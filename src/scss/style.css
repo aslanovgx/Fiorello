@@ -298,6 +298,7 @@ header #main_nav .bar {
 }
 header #main_nav .bar li i {
   display: none;
+  cursor: pointer;
 }
 @media (max-width: 1204px) {
   header #main_nav .bar li i {
@@ -390,6 +391,7 @@ header #mobile_nav .nav_details #home_li:hover .nav_home_details {
 }
 header #mobile_nav .nav_details #home_li i {
   font-size: 18px;
+  cursor: pointer;
 }
 header #mobile_nav .nav_details #pages_li:hover .nav_home_details {
   height: 140px;
@@ -522,6 +524,12 @@ main #contact_touch .touch_right {
   max-width: 490px;
   margin: 0 auto;
 }
+@media (max-width: 992px) {
+  main #contact_touch .touch_right {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
 main #contact_touch .touch_right h1 {
   font-size: 38px;
   color: rgba(0, 0, 0, 0.842);
@@ -584,6 +592,10 @@ footer {
     display: inline-flex;
     justify-content: center;
     text-align: center;
+  }
+  footer .row_em {
+    justify-content: center;
+    gap: 20px;
   }
 }
 footer .row_foot {
