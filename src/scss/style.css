@@ -179,6 +179,11 @@ header #main_nav .nav_details {
     display: none;
   }
 }
+@media (min-width: 1337px) {
+  header #main_nav .nav_details {
+    justify-content: end;
+  }
+}
 header #main_nav .nav_details li {
   position: relative;
   padding: 45px 0;
@@ -349,6 +354,7 @@ header #main_nav .bar {
 }
 header #main_nav .bar li i {
   display: none;
+  cursor: pointer;
 }
 @media (max-width: 1204px) {
   header #main_nav .bar li i {
@@ -441,6 +447,7 @@ header #mobile_nav .nav_details #home_li:hover .nav_home_details {
 }
 header #mobile_nav .nav_details #home_li i {
   font-size: 18px;
+  cursor: pointer;
 }
 header #mobile_nav .nav_details #pages_li:hover .nav_home_details {
   height: 140px;
@@ -629,12 +636,36 @@ main #isotope1 .nav_details-3 {
 main #isotope1 .nav_details-3 li i {
   margin-left: 10px;
 }
+@media (max-width: 580px) {
+  main #isotope1 .col-lg-3 {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 362px) {
+  main #isotope1 .col-lg-3 {
+    width: 220px;
+    margin: 0 auto;
+  }
+}
 main #isotope1 .isotop_card {
   margin: 0;
 }
 @media (max-width: 776px) {
   main #isotope1 .isotop_card {
     width: 100%;
+  }
+}
+@media (max-width: 580px) {
+  main #isotope1 .isotop_card {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 362px) {
+  main #isotope1 .isotop_card {
+    width: 220px;
+    margin: 0 auto;
   }
 }
 main #isotope1 .isotop_card:hover .img img {
@@ -653,6 +684,11 @@ main #isotope1 .isotop_card .img {
 main #isotope1 .isotop_card .img img {
   width: 100%;
   transition: 0.3s ease-in-out;
+}
+@media (min-width: 1337px) {
+  main #isotope1 .isotop_card .img img {
+    width: 295px;
+  }
 }
 main #isotope1 .isotop_card .isotop_details {
   flex-direction: column;

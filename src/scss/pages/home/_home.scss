@@ -35,6 +35,11 @@ header {
 
             }
 
+            @media (min-width: 1337px) {
+                justify-content: end;
+
+            }
+
             li {
                 position: relative;
                 padding: 45px 0;
@@ -251,7 +256,7 @@ header {
             li {
                 i {
                     display: none;
-
+                    cursor: pointer;
                     @media (max-width: 1204px) {
                         display: block;
                     }
@@ -368,6 +373,7 @@ header {
 
                 i {
                     font-size: 18px;
+                    cursor: pointer;
                 }
             }
 
@@ -616,11 +622,28 @@ main {
                 }
             }
         }
-
+        .col-lg-3 {
+            @media (max-width: 580px) {
+                width: 320px;
+                margin: 0 auto;
+            }
+            @media (max-width: 362px) {
+                width: 220px;
+                margin: 0 auto;
+            }
+        }
         .isotop_card {
             margin: 0;
             @media (max-width: 776px) {
                 width: 100%;
+            }
+            @media (max-width: 580px) {
+                width: 320px;
+                margin: 0 auto;
+            }
+            @media (max-width: 362px) {
+                width: 220px;
+                margin: 0 auto;
             }
             &:hover {
                 .img {
@@ -648,6 +671,9 @@ main {
                     @extend %img-contain;
                     width: 100%;
                     transition: 0.3s ease-in-out;
+                    @media (min-width: 1337px) {
+                        width: 295px;
+                    }
                 }
             }
 
