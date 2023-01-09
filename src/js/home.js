@@ -91,7 +91,7 @@ if(X_Btn){
 // -----------------------------------------------
 
 const cart_add_hover = document.querySelectorAll('#cart_add_hover')
-const hover_cart = document.querySelectorAll('#hover_cart')
+const hover_cart = document.querySelectorAll('#isotop_card')
 
 if(cart_add_hover) {
     for(const but of cart_add_hover)
