@@ -671,9 +671,7 @@ main {
                     @extend %img-contain;
                     width: 100%;
                     transition: 0.3s ease-in-out;
-                    @media (min-width: 1337px) {
-                        width: 295px;
-                    }
+                    
                 }
             }
 
