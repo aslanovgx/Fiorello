@@ -90,12 +90,12 @@ if(X_Btn){
 
 // -----------------------------------------------
 
-const cart_add_hover = document.querySelectorAll('#cart_add_hover')
-const hover_cart = document.querySelectorAll('#isotop_card')
+const Isotop_card = document.querySelectorAll('.isotop_card')
+const Add_to_cart = document.querySelectorAll('#add_to_cart_icon')
 
-if(cart_add_hover) {
-    for(const but of cart_add_hover)
-    but.addEventListener('click', e => {
+if(Isotop_card) {
+    for(const btn1 of Isotop_card)
+    btn1.addEventListener('click', e => {
         var parent = e.target.parentNode.parentNode
         console.log(parent);
         var clone = parent.cloneNode(true)
