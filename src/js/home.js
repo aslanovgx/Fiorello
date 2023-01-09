@@ -28,21 +28,39 @@ for (let i = 0; i < 3; i++) {
 window.onload = ChangeImg;
 
 // --------------------------------------------
+// var Isotope_All = document.querySelectorAll('.isotop_all')
+// var a = Isotope_All.style.height;
 
 // init Isotope
-var $grid = $('.isotop_all').isotope({
-    // options
-});
+// var $grid = $('.isotop_all').isotope({
+//     // options
+// });
 // filter items on button click
-$('.nav_details-2').on( 'click', 'li', function() {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-    
-});
-$('.nav_details-2').on( 'click', 'li', function() {
+// $('.nav_details-2').on('click', 'li', function () {
+//     var filterValue = $(this).attr('data-filter');
+//     $grid.isotope({ filter: filterValue });
+
+
+// });
+
+(function () {
+    'use strict';
+
+    var $projects = $('.projects');
+
+    $projects.isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+    })
+})
+
+
+
+
+$('.nav_details-2').on('click', 'li', function () {
     $(this).siblings('.active').removeClass('active');
     $(this).addClass('active');
-    
+
 });
 
 // --------------------------------------------
@@ -53,21 +71,21 @@ const Body = document.querySelector('#main')
 
 
 if (İframe_Btn) {
-    İframe_Btn.addEventListener('click', ()=>{
+    İframe_Btn.addEventListener('click', () => {
         console.log('salam');
         Iframe_Box.style.display = "block"
         Body.style.opacity = "0.5"
         Iframe_Box.style.opacity = "1"
-        
+
     })
 }
 
 var swiper = new Swiper(".swiper-navigate", {
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-  });
+});
 
 
 
