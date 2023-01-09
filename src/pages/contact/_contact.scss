@@ -34,6 +34,10 @@ header {
                 display: none;
 
             }
+            @media (min-width: 1337px) {
+                justify-content: end;
+
+            }
 
             li {
                 position: relative;
