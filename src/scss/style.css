@@ -960,6 +960,10 @@ footer {
   footer .row_bg {
     gap: 35px;
   }
+  footer .row_em {
+    justify-content: center;
+    gap: 20px;
+  }
 }
 @media (max-width: 776px) {
   footer .col-lg-3 {
