@@ -6,8 +6,6 @@ Images[0] = './../src/images/h3-slider-background.jpg'
 Images[1] = './../src/images/h3-slider-background-2.jpg'
 Images[2] = './../src/images/h3-slider-background-3.jpg'
 
-
-
 for (let i = 0; i < 3; i++) {
     const element = Images[i];
     function ChangeImg() {
@@ -28,34 +26,18 @@ for (let i = 0; i < 3; i++) {
 window.onload = ChangeImg;
 
 // --------------------------------------------
-// var Isotope_All = document.querySelectorAll('.isotop_all')
-// var a = Isotope_All.style.height;
 
 // init Isotope
-// var $grid = $('.isotop_all').isotope({
-//     // options
-// });
+var $grid = $('.isotop_all').isotope({
+    // options
+});
 // filter items on button click
-// $('.nav_details-2').on('click', 'li', function () {
-//     var filterValue = $(this).attr('data-filter');
-//     $grid.isotope({ filter: filterValue });
+$('.nav_details-2').on('click', 'li', function () {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
 
 
-// });
-
-(function () {
-    'use strict';
-
-    var $projects = $('.projects');
-
-    $projects.isotope({
-        itemSelector: '.item',
-        layoutMode: 'fitRows'
-    })
-})
-
-
-
+});
 
 $('.nav_details-2').on('click', 'li', function () {
     $(this).siblings('.active').removeClass('active');
@@ -87,14 +69,36 @@ var swiper = new Swiper(".swiper-navigate", {
     },
 });
 
+// --------------------------------------------------------
 
+const Mobile_Nav = document.querySelector('.mobile_box')
+const X_Btn = document.querySelector('.fa-xmark')
+const Bar_nav = document.querySelector('.fa-bars')
 
-// var Card_Isotop = document.querySelector('.isotop_card')
-//   var Isotop_all = document.querySelectorAll('.isotop_all')
-//     for (let i = 0; i < Isotop_all.length; i++) {
-    //       const element = Isotop_all[i];
-    //       if(element.style.height = '0px'){
-        //         element.style.display = "none"
-        //           console.log('sa');
-        //       }
-//   }
+if(Bar_nav){
+    Bar_nav.addEventListener('click', ()=> {
+    Mobile_Nav.style.transform = "translateX(0px)"
+    // console.log('sa');
+    })
+}
+if(X_Btn){
+    X_Btn.addEventListener('click', ()=> {
+    Mobile_Nav.style.transform = "translateX(100%)"
+    // console.log('sa');
+    })
+}
+
+// -----------------------------------------------
+
+const cart_add_hover = document.querySelectorAll('#cart_add_hover')
+const hover_cart = document.querySelectorAll('#hover_cart')
+
+if(cart_add_hover) {
+    for(const but of cart_add_hover)
+    but.addEventListener('click', e => {
+        var parent = e.target.parentNode.parentNode
+        console.log(parent);
+        var clone = parent.cloneNode(true)
+        hover_cart.appendChild(clone)
+    })
+}
