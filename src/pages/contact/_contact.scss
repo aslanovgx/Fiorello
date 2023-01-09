@@ -528,6 +528,9 @@ main {
             padding: 50px 40px;
             text-align: center;
 
+            @media (max-width:768px) {
+                padding: 50px 10px;
+            }
             .touch_img {
                 width: 154px;
                 margin: 0 auto 20px auto;
@@ -543,6 +546,9 @@ main {
                 h1 {
                     font-size: 38px;
                     color: $iframe_right_h1_color;
+                    @media (max-width:768px) {
+                        font-size: 30px;
+                    }
                 }
 
                 .logo {
@@ -560,7 +566,7 @@ main {
             @extend %send_left-copy;
             @media (max-width: 992px) {
                 text-align: center;
-                margin-top: 30px;
+                margin: 30px auto 30px auto;
             }
             h1 {
                 font-size: 38px;
@@ -611,16 +617,16 @@ footer {
     .row_bg {
         gap: 35px;
     }
+    .row_em {
+        justify-content: center;
+        gap: 20px;
+    }
    }
    @media (max-width: 776px) {
     .col-lg-3 {
         display: inline-flex;
         justify-content: center;
         text-align: center;
-    }
-    .row_em {
-        justify-content: center;
-        gap: 20px;
     }
    }
 

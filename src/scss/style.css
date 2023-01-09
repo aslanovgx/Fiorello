@@ -512,6 +512,11 @@ main #contact_touch .touch_left {
   padding: 50px 40px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  main #contact_touch .touch_left {
+    padding: 50px 10px;
+  }
+}
 main #contact_touch .touch_left .touch_img {
   width: 154px;
   margin: 0 auto 20px auto;
@@ -520,6 +525,11 @@ main #contact_touch .touch_left .touch_details h1 {
   font-size: 38px;
   color: rgba(0, 0, 0, 0.842);
 }
+@media (max-width: 768px) {
+  main #contact_touch .touch_left .touch_details h1 {
+    font-size: 30px;
+  }
+}
 main #contact_touch .touch_right {
   max-width: 490px;
   margin: 0 auto;
@@ -527,7 +537,7 @@ main #contact_touch .touch_right {
 @media (max-width: 992px) {
   main #contact_touch .touch_right {
     text-align: center;
-    margin-top: 30px;
+    margin: 30px auto 30px auto;
   }
 }
 main #contact_touch .touch_right h1 {
@@ -586,16 +596,16 @@ footer {
   footer .row_bg {
     gap: 35px;
   }
+  footer .row_em {
+    justify-content: center;
+    gap: 20px;
+  }
 }
 @media (max-width: 776px) {
   footer .col-lg-3 {
     display: inline-flex;
     justify-content: center;
     text-align: center;
-  }
-  footer .row_em {
-    justify-content: center;
-    gap: 20px;
   }
 }
 footer .row_foot {
