@@ -310,6 +310,7 @@ header {
                         // justify-content: start;
                         flex-direction: column;
                         padding-bottom: 20px;
+
                         li {
                             font-weight: 500;
                             @include _All($f_size: 13px, $border: none, $color: $text_color_gray, $letter_spacing: 0px);
@@ -317,6 +318,7 @@ header {
                             margin: 23px 20px;
                             // width: 203px;
                         }
+
                         .all_of_that {
                             @extend %d-flex;
                             flex-direction: column;
@@ -324,32 +326,37 @@ header {
                             width: 100%;
                             padding: 0 18px;
                             margin-bottom: 10px;
+
                             .card_of_add_to {
                                 @extend %d-flex;
                                 width: 100%;
                                 gap: 18px;
                                 justify-content: flex-start;
+
                                 .img_and_desc {
                                     // @extend %d-flex;
                                     // justify-content: start;
-                                   
+
                                     img {
                                         @extend %img-contain;
                                         width: 50px;
                                         height: 66px;
                                     }
                                 }
+
                                 .desc_part {
                                     a {
                                         @extend %a-copy;
                                         text-transform: uppercase;
                                         font-size: 11px;
                                     }
+
                                     .span_descs {
                                         @extend %d-flex;
                                         justify-content: flex-start;
                                         gap: 20px;
                                         @extend %a-copy;
+
                                         i {
                                             font-size: 16px;
                                         }
@@ -357,7 +364,7 @@ header {
                                 }
                             }
                         }
-                        
+
                         .total_part {
                             @extend %d-flex;
                             justify-content: space-between;
@@ -368,11 +375,13 @@ header {
                                 font-weight: 700;
                             }
                         }
+
                         .button_part {
                             padding: 0 18px;
-                            width: 100%; 
+                            width: 100%;
                             @extend %d-flex;
-                            justify-content: space-between;   
+                            justify-content: space-between;
+
                             button {
                                 @extend %a-copy;
                                 @include _All($f_size: 9px, $color: #fff, $border: none, $txt_transform: uppercase);
@@ -381,14 +390,16 @@ header {
                                 height: 40px;
                                 padding: 0 18px;
                                 transition: 0.5s ease-in-out;
-            
+
                                 &:hover {
                                     background-color: rgb(235, 38, 38);
                                 }
                             }
+
                             :last-child {
                                 background-color: $main_color;
                                 margin-left: 5px;
+
                                 &:hover {
                                     background-color: $main_color;
                                     opacity: 0.9;
@@ -421,7 +432,7 @@ header {
 
     #mobile_nav {
 
-        .nav_details {
+        .mobile_box {
             transform: translateX(100%);
             transition: 0.3s ease-in-out;
             z-index: 10;
@@ -474,12 +485,14 @@ header {
                         height: 1px;
                         background-color: black;
                         transition: 0.4s ease-in-out;
+
+                        #home_id {
+                            border-bottom: 1px solid $text_color_gray;
+                        }
                     }
                 }
 
-                #home_id {
-                    border-bottom: 1px solid $text_color_gray;
-                }
+
 
 
                 .nav_home_details {
@@ -515,62 +528,41 @@ header {
                 }
             }
 
+            .nav_home_details_home {
+                li {
+                    a {
+                        @extend %a-copy;
+                        text-transform: uppercase;
+                    }
+                }
+
+                // display: none;
+                // overflow: hidden;
+                // height: 0;
+                // transition: 0.3s ease-in-out;
+            }
+
             #home_li {
                 display: flex;
                 justify-content: space-between;
-
-                &:hover {
-                    .nav_home_details {
-                        height: 310px;
-                    }
-                }
 
                 i {
                     font-size: 18px;
                     cursor: pointer;
                 }
-            }
 
-            #pages_li {
-                &:hover {
-                    .nav_home_details {
-                        height: 140px;
+                #home_id {
+                    &:hover {
+                        color: green;
+                        // font-size: 2rem;
                     }
                 }
             }
 
-            #portfolio_li {
-                &:hover {
-                    .nav_home_details {
-                        height: 140px;
-                    }
-                }
-            }
-
-            #blog_li {
-                &:hover {
-                    .nav_home_details {
-                        height: 140px;
-                    }
-                }
-            }
-
-            #elements_li {
-                &:hover {
-                    .nav_home_details {
-                        height: 140px;
-                    }
-                }
-            }
+            
 
             #shop_li {
                 position: static;
-
-                &:hover {
-                    .nav_all_ul {
-                        height: 460px;
-                    }
-                }
 
                 .nav_all_ul {
                     height: 0;
@@ -743,11 +735,23 @@ main {
     #isotope1 {
         padding: 80px 0;
 
-        
+        .data_row {
+            .col-lg-3 {
+                @media (max-width: 582px) {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
 
         .nav_details-2 {
             @extend %nav-details-copy;
             gap: 33px;
+
+            @media (max-width: 992px) {
+                display: none;
+            }
 
             @media (max-width: 776px) {
                 justify-content: center;
@@ -769,16 +773,39 @@ main {
         }
 
         .nav_details-3 {
+            &:hover {
+                .isotop_mini_details {
+                    display: block;
+                }
+            }
+
             @extend %nav-details-copy;
             justify-content: flex-end;
 
-            @media (max-width: 992px) {
-                display: none;
-            }
+
 
             li {
+                position: relative;
+
                 i {
                     margin-left: 10px;
+                }
+
+                .isotop_mini_details {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: -145px;
+                    z-index: 5;
+                    background-color: white;
+                    width: 139px;
+                    padding-left: 10px;
+
+                    li {
+                        @extend %a-copy;
+                        margin-bottom: 6px;
+                        color: rgb(61, 111, 61);
+                    }
                 }
             }
         }
@@ -810,6 +837,14 @@ main {
             @media (max-width: 362px) {
                 width: 220px;
                 margin: 0 auto;
+            }
+
+            .img {
+                img {
+                    @media (max-width: 1204px) {
+                        width: 222px !important;
+                    }
+                }
             }
 
             &:hover {
@@ -870,10 +905,25 @@ main {
                     left: calc((261px - 67px) / 2);
                     transform: translateX(300px);
                     transition: 0.4s ease-in-out;
-
-                    @media (max-width: 776px) {
-                        display: none;
+                    @media (max-width: 1204px) {
+                        left: calc((222px - 67px) / 2);
                     }
+                    @media (max-width: 992px) {
+                        left: calc((336px - 67px) / 2);
+                    }
+                    @media (max-width: 768px) {
+                        left: calc((516px - 67px) / 2);
+                    }
+                    @media (max-width: 582px) {
+                        left: calc((320px - 67px) / 2);
+                    }
+                    @media (max-width: 367px) {
+                        left: calc((220px - 67px) / 2);
+                    }
+
+                    // @media (max-width: 776px) {
+                    //     display: none;
+                    // }
 
                     span {
                         transition: 0.3s ease-in-out;
@@ -1207,7 +1257,7 @@ main {
     }
 
     #iframe_fixed {
-
+        // position: relative;
         iframe {
             display: none;
             position: fixed;
@@ -1217,6 +1267,26 @@ main {
             height: 200px;
             margin: 0 auto;
             z-index: 2;
+        }
+
+        .iframe_remove {
+            cursor: pointer;
+            position: fixed;
+            display: none;
+            top: 133px;
+            left: calc(((100% - 300px) / 2 ) + 300px );
+
+            i {
+                background-color: black;
+                color: white;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                opacity: 1 !important;
+            }
         }
     }
 }

@@ -29,19 +29,44 @@ window.onload = ChangeImg;
 // --------------------------------------------
 
 const İframe_Btn = document.querySelector('#iframe_btn')
+const İframe_Remove_Btn = document.querySelector('.iframe_remove')
 const Iframe_Box = document.querySelector('#iframe_f')
 const Body = document.querySelector('#main')
 
 
 if (İframe_Btn) {
-    İframe_Btn.addEventListener('click', () => {
+    İframe_Btn.addEventListener('click', (e) => {
+        e.preventDefault();
         console.log('salam');
         Iframe_Box.style.display = "block"
         Body.style.opacity = "0.5"
         Iframe_Box.style.opacity = "1"
+        İframe_Remove_Btn.style.display = "block"
+
 
     })
 }
+if (İframe_Remove_Btn) {
+    İframe_Remove_Btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('salam');
+        Iframe_Box.style.display = "none"
+        Body.style.opacity = "1"
+        Iframe_Box.style.opacity = "0"
+
+        İframe_Remove_Btn.style.display = "none"
+
+    })
+}
+var Home_Id = document.getElementById('home_id')
+
+Home_Id.addEventListener('click', () => {
+    console.log('sdsd');
+})
+
+
+
+
 
 var swiper = new Swiper(".swiper-navigate", {
     navigation: {
@@ -59,7 +84,7 @@ const Bar_nav = document.querySelector('.fa-bars')
 if (Bar_nav) {
     Bar_nav.addEventListener('click', () => {
         Mobile_Nav.style.transform = "translateX(0px)"
-        // console.log('sa');
+        console.log('sa');
     })
 }
 if (X_Btn) {
@@ -70,7 +95,15 @@ if (X_Btn) {
 }
 
 // ------------------------------------
+// const Home_Id = document.getElementById('pages_li')
+// if (Home_Id) {
+//     Home_Id.addEventListener('click', ()=> {
+//         console.log('sdsd');
+//     })
+// }
 
+
+// ------------------------------------
 const Nav_Home_Details3 = document.querySelector('.nav_home_details3');
 const SearchBtn = document.querySelector('.glasses');
 
@@ -161,7 +194,7 @@ data.map((el) => {
     <div class="isotop_details">
         <a href="#">${el.desc}</a>
 
-        <span>${el.money}</span>
+        <span>$<span>${el.money}</span></span>
         <div class="span_hover">
             <span id="add1_btn">Add to cart</span>
         </div>
@@ -174,7 +207,7 @@ data.map((el) => {
     // console.log(data[0]);
     // console.log(el.money);
     // console.log(data);
-    // ADD_data_Row.innerHTML += ADD_Data  
+    // ADD_data_Row.innerHTML += ADD_Data
     // console.log(ADD_Data);
     // console.log(data);
 
@@ -231,7 +264,7 @@ for (let k = 0; k < Add_Btn.length; k++) {
 
 
         // This is money of isotope card
-        const money_of_isotope_card = element.parentElement.parentElement.children[1].innerHTML;
+        const money_of_isotope_card = element.parentElement.parentElement.children[1].children[0].innerHTML;
         // console.log(money_of_isotope_card);
 
         // This is count of isotope card
@@ -268,9 +301,9 @@ for (let k = 0; k < Add_Btn.length; k++) {
                 <div class="span_lefts">
                     <span id="increase_count">1</span> <span>X</span> <span id="money_of_cart">${money_of_isotope_card}</span>
                 </div>
-               
+
                     <i class="fa-solid fa-xmark decline_x"></i>
-               
+
             </div>
         </div>
     </div>
@@ -283,8 +316,8 @@ for (let k = 0; k < Add_Btn.length; k++) {
 
 
 
-        
-        
+
+
         // ADD_data_Row.style.margin = '56px 0 0 0'
         No_Product.style.display = 'none'
 
@@ -321,10 +354,10 @@ for (let k = 0; k < Add_Btn.length; k++) {
                 Total_price.innerHTML = Number(Total_price.innerHTML) - Number(money_near_of_removing_btn);
                 Length_of_cards.innerHTML = Number(Length_of_cards.innerHTML) - Number(1);
 
-                if(Length_of_cards.innerHTML == '0') {
+                if (Length_of_cards.innerHTML == '0') {
                     No_Product.style.display = 'block'
                     ADD_data_Row.style.margin = '0 0 0 0'
-               
+
                 }
             })
         }
