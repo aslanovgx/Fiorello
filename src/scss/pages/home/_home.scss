@@ -87,7 +87,7 @@ header {
                 .nav_home_details {
                     height: 0;
                     overflow: hidden;
-                    @include _All($width: 240px, $bcg_color: #fff);
+                    @include _All($width: 210px, $bcg_color: #fff);
                     position: absolute;
                     top: 107px;
                     left: -26px;
@@ -177,7 +177,7 @@ header {
                     z-index: 8;
                     transition: 0.4s ease-in-out;
                     padding: 0 0 0 26px;
-                    @include _All($width: 1140px, $bcg_color: #fff);
+                    @include _All($width: 100%, $bcg_color: #fff);
                     overflow: hidden;
 
                     .nav_home_details2 {
@@ -211,6 +211,7 @@ header {
 
 
             .special_add_to_cart {
+                display: flex;
 
                 i {
                     @include _All($f_size: 19px,
@@ -229,21 +230,173 @@ header {
                     }
                 }
 
-                #add_to_cart_icon {
-                    position: relative;
-                    color: $main_color;
-                    margin-right: 5px;
-                    margin-left: 15px;
-
-                    span {
-                        position: absolute;
+                .glasses {
+                    .nav_home_details3 {
+                        @extend %nav_home_details-copy;
+                        width: auto;
+                        height: auto;
                         @extend %d-flex;
-                        @include _All($width: 15px, $height: 15px, $margin: 0 auto, $border_r: 50%, $bcg_color: $secondary_color, $color: white, $f_size: 9px, $f_weight: 700, $top: -3px, $right: -3px);
+                        position: absolute;
+                        gap: 12px;
+                        top: 114px;
+                        right: 136px;
+                        left: auto;
+                        transform: translateY(-46px);
+                        height: 0;
+                        padding: 0;
+
+                        input {
+                            @include _All($color: $input_color, $f_size: 12px);
+                            @include _All($padding: 0px, $border: none);
+                            width: 260px;
+                            height: 44px;
+                            margin: 7px 0;
+                            padding: 0 12px 0 20px;
+
+                            &::placeholder {
+                                @include _All($color: $input_color, $f_size: 12px);
+                            }
+                        }
+
+                        i {
+                            @include _All($f_size: 16px,
+                                $f_weight: 600,
+                                $color: $input_color,
+                                $l_height: 12px,
+                                $letter_spacing: 0.1em,
+                                $txt_dec: none);
+                            cursor: pointer;
+                            padding-right: 12px;
+                        }
                     }
                 }
 
-                span {
-                    @include _All($f_size: 12px, $f_weight: 500, $color: $main_color, $l_height: 22px, $letter_spacing: 0.1em, $txt_dec: none);
+                .for_add_to_cart {
+                    &:hover {
+                        .nav_home_details4 {
+                            display: block;
+                        }
+                    }
+
+                    #add_to_cart_icon {
+                        position: relative;
+                        color: $main_color;
+                        margin-right: 5px;
+                        margin-left: 15px;
+
+                        span {
+                            position: absolute;
+                            @extend %d-flex;
+                            @include _All($width: 15px, $height: 15px, $margin: 0 auto, $border_r: 50%, $bcg_color: $secondary_color, $color: white, $f_size: 9px, $f_weight: 700, $top: -3px, $right: -3px);
+                        }
+                    }
+
+                    span {
+                        @include _All($f_size: 12px, $f_weight: 500, $color: $main_color, $l_height: 22px, $letter_spacing: 0.1em, $txt_dec: none);
+                    }
+
+                    .nav_home_details4 {
+                        display: none;
+                        @extend %nav_home_details-copy;
+                        position: absolute;
+                        top: 65px;
+                        left: -103px;
+                        height: auto;
+                        width: auto;
+                        @extend %d-flex;
+                        // gap: 10px;
+                        padding: 40px 0 0 0;
+                        width: 245px;
+                        // justify-content: start;
+                        flex-direction: column;
+                        padding-bottom: 20px;
+                        li {
+                            font-weight: 500;
+                            @include _All($f_size: 13px, $border: none, $color: $text_color_gray, $letter_spacing: 0px);
+                            padding: 0 !important;
+                            margin: 23px 20px;
+                            // width: 203px;
+                        }
+                        .all_of_that {
+                            @extend %d-flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            width: 100%;
+                            padding: 0 18px;
+                            margin-bottom: 10px;
+                            .card_of_add_to {
+                                @extend %d-flex;
+                                width: 100%;
+                                gap: 18px;
+                                justify-content: flex-start;
+                                .img_and_desc {
+                                    // @extend %d-flex;
+                                    // justify-content: start;
+                                   
+                                    img {
+                                        @extend %img-contain;
+                                        width: 50px;
+                                        height: 66px;
+                                    }
+                                }
+                                .desc_part {
+                                    a {
+                                        @extend %a-copy;
+                                        text-transform: uppercase;
+                                        font-size: 11px;
+                                    }
+                                    .span_descs {
+                                        @extend %d-flex;
+                                        justify-content: flex-start;
+                                        gap: 20px;
+                                        @extend %a-copy;
+                                        i {
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .total_part {
+                            @extend %d-flex;
+                            justify-content: space-between;
+                            padding: 0 18px;
+                            width: 100%;
+
+                            :first-child {
+                                font-weight: 700;
+                            }
+                        }
+                        .button_part {
+                            padding: 0 18px;
+                            width: 100%; 
+                            @extend %d-flex;
+                            justify-content: space-between;   
+                            button {
+                                @extend %a-copy;
+                                @include _All($f_size: 9px, $color: #fff, $border: none, $txt_transform: uppercase);
+                                font-family: "Montserrat", serif;
+                                background-color: $secondary_color;
+                                height: 40px;
+                                padding: 0 18px;
+                                transition: 0.5s ease-in-out;
+            
+                                &:hover {
+                                    background-color: rgb(235, 38, 38);
+                                }
+                            }
+                            :last-child {
+                                background-color: $main_color;
+                                margin-left: 5px;
+                                &:hover {
+                                    background-color: $main_color;
+                                    opacity: 0.9;
+                                }
+                            }
+                        }
+
+                    }
                 }
             }
         }
@@ -257,6 +410,7 @@ header {
                 i {
                     display: none;
                     cursor: pointer;
+
                     @media (max-width: 1204px) {
                         display: block;
                     }
@@ -463,9 +617,8 @@ header {
 
 
             .special_add_to_cart {
-
                 i {
-                    @include _All($f_size: 19px,
+                    @include _All($f_size: 29px,
                         $f_weight: 600,
                         $color: #1b1b1bbd,
                         $l_height: 22px,
@@ -496,6 +649,11 @@ header {
 
                 span {
                     @include _All($f_size: 12px, $f_weight: 500, $color: $main_color, $l_height: 22px, $letter_spacing: 0.1em, $txt_dec: none);
+                }
+
+                .glasses {
+                    font-size: 40px !important;
+                    color: green;
                 }
             }
         }
@@ -585,6 +743,8 @@ main {
     #isotope1 {
         padding: 80px 0;
 
+        
+
         .nav_details-2 {
             @extend %nav-details-copy;
             gap: 33px;
@@ -622,29 +782,36 @@ main {
                 }
             }
         }
+
         .col-lg-3 {
             @media (max-width: 580px) {
                 width: 320px;
                 margin: 0 auto;
             }
+
             @media (max-width: 362px) {
                 width: 220px;
                 margin: 0 auto;
             }
         }
+
         .isotop_card {
             margin: 0;
+
             @media (max-width: 776px) {
                 width: 100%;
             }
+
             @media (max-width: 580px) {
                 width: 320px;
                 margin: 0 auto;
             }
+
             @media (max-width: 362px) {
                 width: 220px;
                 margin: 0 auto;
             }
+
             &:hover {
                 .img {
                     img {
@@ -671,7 +838,7 @@ main {
                     @extend %img-contain;
                     width: 100%;
                     transition: 0.3s ease-in-out;
-                    
+
                 }
             }
 
@@ -1058,31 +1225,35 @@ footer {
     background-color: $footer_background;
     padding: 70px 0 0 0;
 
-   @media (max-width: 992px) {
-    .col-lg-4 {
-        display: inline-flex;
-        justify-content: center;
-        text-align: center;
-        .footer_right {
+    @media (max-width: 992px) {
+        .col-lg-4 {
+            display: inline-flex;
             justify-content: center;
+            text-align: center;
+
+            .footer_right {
+                justify-content: center;
+            }
         }
-    }
-    .row_bg {
-        gap: 35px;
-    }
-    .row_em {
-        justify-content: center;
-        gap: 20px;
+
+        .row_bg {
+            gap: 35px;
+        }
+
+        .row_em {
+            justify-content: center;
+            gap: 20px;
+        }
+
     }
 
-   }
-   @media (max-width: 776px) {
-    .col-lg-3 {
-        display: inline-flex;
-        justify-content: center;
-        text-align: center;
+    @media (max-width: 776px) {
+        .col-lg-3 {
+            display: inline-flex;
+            justify-content: center;
+            text-align: center;
+        }
     }
-   }
 
     .row_foot {
         border-bottom: 1px solid $border_bottom_color;
