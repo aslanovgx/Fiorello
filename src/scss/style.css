@@ -627,6 +627,21 @@ main #product_list .product_header p {
 main #standard_categories {
   padding: 80px 0;
 }
+@media (max-width: 992px) {
+  main #standard_categories .clf {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 508px) {
+  main #standard_categories .clf {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
 main #standard_categories .categories_left li a {
   color: rgba(128, 128, 128, 0.739);
 }
@@ -673,6 +688,7 @@ main #standard_categories .categories_left .spec_price a:after {
 }
 main #standard_categories .categories_left .another_li {
   width: 215px;
+  margin: 30px 0 0 0;
 }
 main #standard_categories .categories_left .another_li a {
   justify-content: space-between;
@@ -763,9 +779,20 @@ main #standard_categories .isotop_card {
     margin: 0 auto;
   }
 }
+@media (max-width: 362px) {
+  main #standard_categories .isotop_card {
+    width: 220px;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1204px) {
   main #standard_categories .isotop_card .img img {
-    width: 222px !important;
+    width: 222px;
+  }
+}
+@media (max-width: 1198px) {
+  main #standard_categories .isotop_card .img img {
+    width: 227px !important;
   }
 }
 main #standard_categories .isotop_card:hover .img img {

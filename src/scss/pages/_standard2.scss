@@ -644,6 +644,21 @@ main {
     }
     #standard_categories {
         padding: 80px 0;
+        .clf {
+            @media (max-width: 992px) {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+            }
+            
+            @media (max-width: 508px) {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                flex-direction: column;
+            }
+            
+        }
             .categories_left {
                 li {
                     a {
@@ -667,6 +682,7 @@ main {
                         width: 215px;
                         height: 3px;
                         background-color: black;
+                        
                     }
                     &:after {
                         content: '';
@@ -689,20 +705,25 @@ main {
                             height: 10px;
                             background-color: black;
                             border-radius: 50%;
+                           
                         }
                     }
                 }
                 .another_li {
                     width: 215px;
+                    margin: 30px 0 0 0;
                     a {
                         @extend %d-flex;
                         justify-content: space-between;
+                       
                     }
                 }
                 
             }
+            
     
             .data_row {
+                // padding: 32px;
                 .col-lg-3 {
                     @media (max-width: 582px) {
                         width: 100%;
@@ -805,13 +826,21 @@ main {
                     width: 220px;
                     margin: 0 auto;
                 }
+                @media (max-width: 362px) {
+                    width: 220px;
+                    margin: 0 auto;
+                }
     
                 .img {
                     img {
                         @media (max-width: 1204px) {
-                            width: 222px !important;
+                            width: 222px;
+                        }
+                        @media (max-width: 1198px) {
+                            width: 227px !important;
                         }
                     }
+                  
                 }
     
                 &:hover {
@@ -822,6 +851,7 @@ main {
                     }
     
                     .isotop_details {
+                        
                         span {
                             transform: translateX(300px);
                         }
