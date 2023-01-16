@@ -530,9 +530,12 @@ header {
 
             .nav_home_details_home {
                 li {
+                    margin-bottom: 4px;
                     a {
                         @extend %a-copy;
                         text-transform: uppercase;
+                        color: green;
+                        font-size: 10px;
                     }
                 }
 
@@ -558,7 +561,7 @@ header {
                     }
                 }
             }
-
+            
             
 
             #shop_li {
@@ -605,49 +608,18 @@ header {
                 }
 
 
+                
             }
-
-
             .special_add_to_cart {
                 i {
-                    @include _All($f_size: 29px,
-                        $f_weight: 600,
-                        $color: #1b1b1bbd,
-                        $l_height: 22px,
-                        $letter_spacing: 0.1em,
-                        $txt_dec: none);
-                    cursor: pointer;
-                    transition: 0.3s ease-in-out;
-
-                    &:first-child {
-                        &:hover {
-                            color: $secondary_color;
-                        }
-                    }
+                    font-size: 13px;
                 }
-
-                #add_to_cart_icon {
-                    position: relative;
-                    color: $main_color;
-                    margin-right: 5px;
-                    margin-left: 15px;
-
-                    span {
-                        position: absolute;
-                        @extend %d-flex;
-                        @include _All($width: 15px, $height: 15px, $margin: 0 auto, $border_r: 50%, $bcg_color: $secondary_color, $color: white, $f_size: 9px, $f_weight: 700, $top: -3px, $right: -3px);
-                    }
-                }
-
                 span {
-                    @include _All($f_size: 12px, $f_weight: 500, $color: $main_color, $l_height: 22px, $letter_spacing: 0.1em, $txt_dec: none);
-                }
-
-                .glasses {
-                    font-size: 40px !important;
-                    color: green;
+                    @extend %a-copy;
                 }
             }
+
+
         }
     }
 }

@@ -15,7 +15,7 @@ main #send .back_image_box img, main #send .send_right img {
   cursor: pointer;
 }
 
-main #join .join_box form, main #expert .expert_images .expert_details, main #valentine .iframe_box a i, main #isotope1 .isotop_card .isotop_details, header #mobile_nav .mobile_box .special_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .total_part, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part .span_descs, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3, header #main_nav .nav_details, main #swiper_navigation .swiper .swiper-slide .swiper_navigate_details, main #isotope1 .nav_details-3 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-2 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-3, main #isotope1 .nav_details-2 {
+main #join .join_box form, main #expert .expert_images .expert_details, main #valentine .iframe_box a i, main #isotope1 .isotop_card .isotop_details, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .total_part, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part .span_descs, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3, header #main_nav .nav_details, main #swiper_navigation .swiper .swiper-slide .swiper_navigate_details, main #isotope1 .nav_details-3 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-2 .special_add_to_cart #add_to_cart_icon span, main #isotope1 .nav_details-3, main #isotope1 .nav_details-2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ main #isotope1 .nav_details-3 .special_add_to_cart span, main #isotope1 .nav_det
   letter-spacing: 0.1em;
 }
 
-footer .footer_right span, footer .footer_box li a, main #blog .blog_box .blog_img .blog_time a, main #join .join_box form button, main #expert .expert_images .expert_details a, main #isotope1 .isotop_card .isotop_details a, main #isotope1 .nav_details-3 li .isotop_mini_details li, main #isotope1 .nav_details-2 li, header #mobile_nav .mobile_box .nav_home_details_home li a, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part button, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part .span_descs, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part a, main #swiper_navigation .swiper .swiper-slide .swiper_navigate_details a {
+footer .footer_right span, footer .footer_box li a, main #blog .blog_box .blog_img .blog_time a, main #join .join_box form button, main #expert .expert_images .expert_details a, main #isotope1 .isotop_card .isotop_details a, main #isotope1 .nav_details-3 li .isotop_mini_details li, main #isotope1 .nav_details-2 li, header #mobile_nav .mobile_box .special_add_to_cart span, header #mobile_nav .mobile_box .nav_home_details_home li a, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part button, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part .span_descs, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part a, main #swiper_navigation .swiper .swiper-slide .swiper_navigate_details a {
   font-size: 12px;
   font-weight: 500;
   color: #1b1b1b;
@@ -601,8 +601,13 @@ header #mobile_nav .mobile_box li .nav_home_details li #main_home_id {
 header #mobile_nav .mobile_box li .nav_home_details li:first-child {
   padding-top: 20px;
 }
+header #mobile_nav .mobile_box .nav_home_details_home li {
+  margin-bottom: 4px;
+}
 header #mobile_nav .mobile_box .nav_home_details_home li a {
   text-transform: uppercase;
+  color: green;
+  font-size: 10px;
 }
 header #mobile_nav .mobile_box #home_li {
   display: flex;
@@ -654,51 +659,8 @@ header #mobile_nav .mobile_box #shop_li .nav_all_ul .nav_home_details2 span {
   font-weight: 500;
 }
 header #mobile_nav .mobile_box .special_add_to_cart i {
-  font-size: 29px;
-  font-weight: 600;
-  color: rgba(27, 27, 27, 0.7411764706);
-  line-height: 22px;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
+  font-size: 13px;
 }
-header #mobile_nav .mobile_box .special_add_to_cart i:first-child:hover {
-  color: #f34f3f;
-}
-header #mobile_nav .mobile_box .special_add_to_cart #add_to_cart_icon {
-  position: relative;
-  color: #1b1b1b;
-  margin-right: 5px;
-  margin-left: 15px;
-}
-header #mobile_nav .mobile_box .special_add_to_cart #add_to_cart_icon span {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  font-size: 9px;
-  font-weight: 700;
-  color: white;
-  margin: 0 auto;
-  border-right: 50%;
-  top: -3px;
-  right: -3px;
-  background-color: #f34f3f;
-}
-header #mobile_nav .mobile_box .special_add_to_cart span {
-  font-size: 12px;
-  font-weight: 500;
-  color: #1b1b1b;
-  line-height: 22px;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-}
-header #mobile_nav .mobile_box .special_add_to_cart .glasses {
-  font-size: 40px !important;
-  color: green;
-}
-
 main {
   position: relative;
 }
