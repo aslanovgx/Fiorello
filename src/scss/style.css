@@ -28,7 +28,7 @@ footer .footer_left span {
   color: #afafaf;
 }
 
-header #mobile_nav .mobile_box #shop_li .nav_all_ul .nav_home_details2 span, header #main_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 span {
+main #product_list .product_header h1, header #mobile_nav .mobile_box #shop_li .nav_all_ul .nav_home_details2 span, header #main_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 span {
   font-family: "Playfair Display", serif;
   font-size: 38px;
   font-weight: 400;
@@ -72,6 +72,16 @@ header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_de
 }
 header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 li:first-child a, header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3 li:first-child a {
   border-bottom: 1px solid #1b1b1b;
+}
+
+main #product_list .product_header p {
+  Font-family: "Lora", serif;
+  font-style: italic;
+  color: #4b4747;
+  font-size: 24px;
+  line-height: 1.5em;
+  max-width: 496px;
+  margin: 30px 0;
 }
 
 header {
@@ -554,6 +564,18 @@ header #mobile_nav .mobile_box #shop_li .nav_all_ul .nav_home_details2 span {
 header #mobile_nav .mobile_box .special_add_to_cart i {
   font-size: 13px;
 }
+main #product_list {
+  padding: 60px 0;
+  background-color: #fafaf9;
+}
+main #product_list .product_header h1 {
+  font-size: 50px;
+}
+main #product_list .product_header p {
+  font-size: 17px;
+  margin: 0;
+}
+
 footer {
   background-color: #fefaf3;
   padding: 70px 0 0 0;

@@ -623,7 +623,26 @@ header {
         }
     }
 }
+main {
+    #product_list {
+        padding: 60px 0;
+        background-color: #fafaf9;
 
+        .product_header {
+            h1 {
+                @extend %big-h1-copy;
+                font-size: 50px;
+                // color: $product_h1_color;
+            }
+
+            p {
+                @extend %swiper_navigation_p-copy;
+                font-size: 17px;
+                margin: 0;
+            }
+        }
+    }
+}
 footer {
     background-color: $footer_background;
     padding: 70px 0 0 0;
