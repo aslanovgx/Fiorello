@@ -1,3 +1,6 @@
+// # About Images Looping
+
+
 const Images = document.querySelector('.back_image')
 // console.log(Images.style.backgroundImage);
 var time = 3000
@@ -27,6 +30,13 @@ window.onload = ChangeImg;
 
 // --------------------------------------------
 // --------------------------------------------
+
+
+
+
+
+
+// #About Iframe
 
 const İframe_Btn = document.querySelector('#iframe_btn')
 const İframe_Remove_Btn = document.querySelector('.iframe_remove')
@@ -60,8 +70,15 @@ if (İframe_Remove_Btn) {
 }
 
 
+// --------------------------------------------
+// --------------------------------------------
 
 
+
+
+
+
+// #About Swiper
 
 
 var swiper = new Swiper(".swiper-navigate", {
@@ -72,6 +89,12 @@ var swiper = new Swiper(".swiper-navigate", {
 });
 
 // --------------------------------------------------------
+// --------------------------------------------------------
+
+
+
+// #About Mobile Navbar
+
 
 const Mobile_Nav = document.querySelector('.mobile_box')
 const X_Btn = document.querySelector('.fa-xmark')
@@ -91,6 +114,9 @@ if (X_Btn) {
 }
 
 // ------------------------------------
+// ------------------------------------
+
+
 // const Home_Id = document.getElementById('pages_li')
 // if (Home_Id) {
 //     Home_Id.addEventListener('click', ()=> {
@@ -99,7 +125,14 @@ if (X_Btn) {
 // }
 
 
+
+
+
 // ------------------------------------
+// ------------------------------------
+
+// #About Search Button
+
 const Nav_Home_Details3 = document.querySelector('.nav_home_details3');
 const SearchBtn = document.querySelector('.glasses');
 
@@ -120,6 +153,12 @@ if (SearchBtn) {
 }
 
 
+
+
+
+
+
+// -------------------------------------------
 // -------------------------------------------
 
 const data = [
@@ -200,14 +239,13 @@ data.map((el) => {
 </div>
 `
     Data_Row.innerHTML += data;
+    
     // console.log(data[0]);
     // console.log(el.money);
     // console.log(data);
     // ADD_data_Row.innerHTML += ADD_Data
     // console.log(ADD_Data);
     // console.log(data);
-
-
     // console.log(Add_Btn.id.replace = 'addddd');
 
 
@@ -239,7 +277,7 @@ $('.filter-button-group').on('click', 'li', function () {
 // --------------------------
 
 
-let f = 0
+
 for (let k = 0; k < Add_Btn.length; k++) {
     const element = Add_Btn[k];
     // console.log(element);
@@ -314,7 +352,7 @@ for (let k = 0; k < Add_Btn.length; k++) {
 
 
 
-        // ADD_data_Row.style.margin = '56px 0 0 0'
+        
         No_Product.style.display = 'none'
 
         const Total_price = document.getElementById('total_price')
@@ -358,28 +396,6 @@ for (let k = 0; k < Add_Btn.length; k++) {
             })
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-        // console.log(Number(Count_of_cart.innerHTML));
-        // console.log(img_src_isotope_card.size);
-
-        // console.log(Count_of_cart.innerText)
-        // if(img_src_isotope_card > 1) {
-        //     ADD_data_Row.innerHTML == ADD_Data
-        // }
-        // f = f + 1
-        // console.log(f);
-        // Count_of_cart.innerText == f
 
     })
 }
