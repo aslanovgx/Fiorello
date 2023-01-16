@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Michroma&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-footer .footer_centre img, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .img_and_desc img, header #main_nav .nav_left img {
+footer .footer_centre img, main #standard_categories .isotop_card .img img, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .img_and_desc img, header #main_nav .nav_left img {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
@@ -7,13 +7,62 @@ footer .footer_centre img, header #main_nav .nav_details .special_add_to_cart .f
   cursor: pointer;
 }
 
-header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .total_part, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part .span_descs, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3, header #main_nav .nav_details {
+main #standard_categories .isotop_card .isotop_details, main #standard_categories .categories_left .another_li a, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .total_part, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part .span_descs, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3, header #main_nav .nav_details, main #standard_categories .nav_details-3 .special_add_to_cart #add_to_cart_icon span, main #standard_categories .nav_details-2 .special_add_to_cart #add_to_cart_icon span, main #standard_categories .nav_details-3, main #standard_categories .nav_details-2 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer .footer_right span, footer .footer_box li a, header #mobile_nav .mobile_box .special_add_to_cart span, header #mobile_nav .mobile_box .nav_home_details_home li a, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part button, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part .span_descs, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part a {
+main #standard_categories .nav_details-3, main #standard_categories .nav_details-2 {
+  justify-content: flex-start;
+  gap: 50px;
+}
+main #standard_categories .nav_details-3 li a, main #standard_categories .nav_details-2 li a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #1b1b1b;
+  line-height: 22px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+main #standard_categories .nav_details-3 .special_add_to_cart i, main #standard_categories .nav_details-2 .special_add_to_cart i {
+  font-size: 19px;
+  font-weight: 600;
+  color: rgba(27, 27, 27, 0.7411764706);
+  line-height: 22px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+main #standard_categories .nav_details-3 .special_add_to_cart #add_to_cart_icon, main #standard_categories .nav_details-2 .special_add_to_cart #add_to_cart_icon {
+  position: relative;
+  color: #1b1b1b;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+main #standard_categories .nav_details-3 .special_add_to_cart #add_to_cart_icon span, main #standard_categories .nav_details-2 .special_add_to_cart #add_to_cart_icon span {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 700;
+  color: white;
+  margin: 0 auto;
+  border-right: 50%;
+  top: -3px;
+  right: -3px;
+  background-color: #f34f3f;
+}
+main #standard_categories .nav_details-3 .special_add_to_cart span, main #standard_categories .nav_details-2 .special_add_to_cart span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #1b1b1b;
+  line-height: 22px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+
+footer .footer_right span, footer .footer_box li a, main #standard_categories .isotop_card .isotop_details a, main #standard_categories .nav_details-3 li .isotop_mini_details li, main #standard_categories .nav_details-2 li, main #standard_categories .categories_left li a, header #mobile_nav .mobile_box .special_add_to_cart span, header #mobile_nav .mobile_box .nav_home_details_home li a, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part button, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part .span_descs, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part a {
   font-size: 12px;
   font-weight: 500;
   color: #1b1b1b;
@@ -574,6 +623,223 @@ main #product_list .product_header h1 {
 main #product_list .product_header p {
   font-size: 17px;
   margin: 0;
+}
+main #standard_categories {
+  padding: 80px 0;
+}
+main #standard_categories .categories_left li a {
+  color: rgba(128, 128, 128, 0.739);
+}
+main #standard_categories .categories_left li:first-child {
+  margin-bottom: 15px;
+}
+main #standard_categories .categories_left li:first-child a {
+  color: black;
+}
+main #standard_categories .categories_left .spec_price {
+  position: relative;
+}
+main #standard_categories .categories_left .spec_price::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 215px;
+  height: 3px;
+  background-color: black;
+}
+main #standard_categories .categories_left .spec_price:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+main #standard_categories .categories_left .spec_price a {
+  position: relative;
+}
+main #standard_categories .categories_left .spec_price a:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 215px;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+main #standard_categories .categories_left .another_li {
+  width: 215px;
+}
+main #standard_categories .categories_left .another_li a {
+  justify-content: space-between;
+}
+@media (max-width: 582px) {
+  main #standard_categories .data_row .col-lg-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+main #standard_categories .nav_details-2 {
+  gap: 33px;
+}
+@media (max-width: 992px) {
+  main #standard_categories .nav_details-2 {
+    display: none;
+  }
+}
+@media (max-width: 776px) {
+  main #standard_categories .nav_details-2 {
+    justify-content: center;
+  }
+}
+main #standard_categories .nav_details-2 .active {
+  color: red;
+}
+@media (max-width: 776px) {
+  main #standard_categories .nav_details-2 .re {
+    display: none;
+  }
+}
+main #standard_categories .nav_details-3 {
+  justify-content: flex-end;
+}
+main #standard_categories .nav_details-3:hover .isotop_mini_details {
+  display: block;
+}
+main #standard_categories .nav_details-3 li {
+  position: relative;
+}
+main #standard_categories .nav_details-3 li i {
+  margin-left: 10px;
+}
+main #standard_categories .nav_details-3 li .isotop_mini_details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -145px;
+  z-index: 5;
+  background-color: white;
+  width: 139px;
+  padding-left: 10px;
+}
+main #standard_categories .nav_details-3 li .isotop_mini_details li {
+  margin-bottom: 6px;
+  color: rgb(61, 111, 61);
+}
+@media (max-width: 580px) {
+  main #standard_categories .col-lg-3 {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 362px) {
+  main #standard_categories .col-lg-3 {
+    width: 220px;
+    margin: 0 auto;
+  }
+}
+main #standard_categories .isotop_card {
+  margin: 0;
+}
+@media (max-width: 776px) {
+  main #standard_categories .isotop_card {
+    width: 100%;
+  }
+}
+@media (max-width: 580px) {
+  main #standard_categories .isotop_card {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 362px) {
+  main #standard_categories .isotop_card {
+    width: 220px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1204px) {
+  main #standard_categories .isotop_card .img img {
+    width: 222px !important;
+  }
+}
+main #standard_categories .isotop_card:hover .img img {
+  transform: scale(1.03);
+}
+main #standard_categories .isotop_card:hover .isotop_details span {
+  transform: translateX(300px);
+}
+main #standard_categories .isotop_card:hover .isotop_details .span_hover {
+  transform: translateX(0px);
+}
+main #standard_categories .isotop_card .img {
+  width: 245px;
+  margin: 0 auto;
+}
+main #standard_categories .isotop_card .img img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+main #standard_categories .isotop_card .isotop_details {
+  flex-direction: column;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+main #standard_categories .isotop_card .isotop_details a {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+main #standard_categories .isotop_card .isotop_details span {
+  font-size: 12px;
+  color: #afafaf;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+main #standard_categories .isotop_card .isotop_details .span_hover {
+  position: absolute;
+  top: 24px;
+  left: 97px;
+  transform: translateX(300px);
+  transition: 0.4s ease-in-out;
+}
+@media (max-width: 1204px) {
+  main #standard_categories .isotop_card .isotop_details .span_hover {
+    left: 77.5px;
+  }
+}
+@media (max-width: 992px) {
+  main #standard_categories .isotop_card .isotop_details .span_hover {
+    left: 134.5px;
+  }
+}
+@media (max-width: 768px) {
+  main #standard_categories .isotop_card .isotop_details .span_hover {
+    left: 224.5px;
+  }
+}
+@media (max-width: 582px) {
+  main #standard_categories .isotop_card .isotop_details .span_hover {
+    left: 126.5px;
+  }
+}
+@media (max-width: 367px) {
+  main #standard_categories .isotop_card .isotop_details .span_hover {
+    left: 76.5px;
+  }
+}
+main #standard_categories .isotop_card .isotop_details .span_hover span {
+  transition: 0.3s ease-in-out;
+}
+main #standard_categories .isotop_card .isotop_details .span_hover span:hover {
+  color: #f34f3f;
 }
 
 footer {

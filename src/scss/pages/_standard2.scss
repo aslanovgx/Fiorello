@@ -642,6 +642,269 @@ main {
             }
         }
     }
+    #standard_categories {
+        padding: 80px 0;
+            .categories_left {
+                li {
+                    a {
+                        @extend %a-copy;
+                        color: rgba(128, 128, 128, 0.739);
+                    }
+                    &:first-child {
+                        margin-bottom: 15px;
+                        a {
+                            color: black;
+                        }
+                    }
+                }
+                .spec_price {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 215px;
+                        height: 3px;
+                        background-color: black;
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: -3px;
+                        left: 0;
+                        width: 10px;
+                        height: 10px;
+                        background-color: black;
+                        border-radius: 50%;
+                    }
+                    a {
+                        position: relative;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: -3px;
+                            left: 215px;
+                            width: 10px;
+                            height: 10px;
+                            background-color: black;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .another_li {
+                    width: 215px;
+                    a {
+                        @extend %d-flex;
+                        justify-content: space-between;
+                    }
+                }
+                
+            }
+    
+            .data_row {
+                .col-lg-3 {
+                    @media (max-width: 582px) {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+    
+            .nav_details-2 {
+                @extend %nav-details-copy;
+                gap: 33px;
+    
+                @media (max-width: 992px) {
+                    display: none;
+                }
+    
+                @media (max-width: 776px) {
+                    justify-content: center;
+                }
+    
+                li {
+                    @extend %a-copy;
+                }
+    
+                .active {
+                    color: red;
+                }
+    
+                .re {
+                    @media (max-width: 776px) {
+                        display: none;
+                    }
+                }
+            }
+    
+            .nav_details-3 {
+                &:hover {
+                    .isotop_mini_details {
+                        display: block;
+                    }
+                }
+    
+                @extend %nav-details-copy;
+                justify-content: flex-end;
+    
+    
+    
+                li {
+                    position: relative;
+    
+                    i {
+                        margin-left: 10px;
+                    }
+    
+                    .isotop_mini_details {
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        left: -145px;
+                        z-index: 5;
+                        background-color: white;
+                        width: 139px;
+                        padding-left: 10px;
+    
+                        li {
+                            @extend %a-copy;
+                            margin-bottom: 6px;
+                            color: rgb(61, 111, 61);
+                        }
+                    }
+                }
+            }
+    
+            .col-lg-3 {
+                @media (max-width: 580px) {
+                    width: 320px;
+                    margin: 0 auto;
+                }
+    
+                @media (max-width: 362px) {
+                    width: 220px;
+                    margin: 0 auto;
+                }
+            }
+    
+            .isotop_card {
+                margin: 0;
+    
+                @media (max-width: 776px) {
+                    width: 100%;
+                }
+    
+                @media (max-width: 580px) {
+                    width: 320px;
+                    margin: 0 auto;
+                }
+    
+                @media (max-width: 362px) {
+                    width: 220px;
+                    margin: 0 auto;
+                }
+    
+                .img {
+                    img {
+                        @media (max-width: 1204px) {
+                            width: 222px !important;
+                        }
+                    }
+                }
+    
+                &:hover {
+                    .img {
+                        img {
+                            transform: scale(1.03);
+                        }
+                    }
+    
+                    .isotop_details {
+                        span {
+                            transform: translateX(300px);
+                        }
+    
+                        .span_hover {
+                            transform: translateX(0px);
+                        }
+                    }
+                }
+    
+                .img {
+                    width: 245px;
+                    margin: 0 auto;
+    
+                    img {
+                        @extend %img-contain;
+                        width: 100%;
+                        transition: 0.3s ease-in-out;
+    
+                    }
+                }
+    
+                .isotop_details {
+                    @extend %d-flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+                    position: relative;
+                    overflow: hidden;
+                    text-align: center;
+                    width: 100%;
+    
+                    a {
+                        @extend %a-copy;
+                        text-transform: uppercase;
+                        margin-bottom: 5px;
+                    }
+    
+    
+                    span {
+                        @include _All ($color: $span_color, $f_size: 12px, $txt_align: center);
+                        transition: 0.4s ease-in-out;
+    
+                    }
+    
+                    .span_hover {
+                        position: absolute;
+                        top: 24px;
+                        left: calc((261px - 67px) / 2);
+                        transform: translateX(300px);
+                        transition: 0.4s ease-in-out;
+                        @media (max-width: 1204px) {
+                            left: calc((222px - 67px) / 2);
+                        }
+                        @media (max-width: 992px) {
+                            left: calc((336px - 67px) / 2);
+                        }
+                        @media (max-width: 768px) {
+                            left: calc((516px - 67px) / 2);
+                        }
+                        @media (max-width: 582px) {
+                            left: calc((320px - 67px) / 2);
+                        }
+                        @media (max-width: 367px) {
+                            left: calc((220px - 67px) / 2);
+                        }
+    
+                        // @media (max-width: 776px) {
+                        //     display: none;
+                        // }
+    
+                        span {
+                            transition: 0.3s ease-in-out;
+    
+                            &:hover {
+                                color: $secondary_color;
+                            }
+                        }
+                    }
+    
+                }
+            }
+        
+    }
 }
 footer {
     background-color: $footer_background;
