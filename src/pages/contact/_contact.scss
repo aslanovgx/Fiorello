@@ -34,10 +34,6 @@ header {
                 display: none;
 
             }
-            @media (min-width: 1337px) {
-                justify-content: end;
-
-            }
 
             li {
                 position: relative;
@@ -255,7 +251,7 @@ header {
             li {
                 i {
                     display: none;
-cursor: pointer;
+
                     @media (max-width: 1204px) {
                         display: block;
                     }
@@ -372,7 +368,6 @@ cursor: pointer;
 
                 i {
                     font-size: 18px;
-                    cursor: pointer;
                 }
             }
 
@@ -609,7 +604,13 @@ footer {
     background-color: $footer_background;
     padding: 70px 0 0 0;
 
-   @media (max-width: 992px) {
+   @media (max-width: 776px) {
+    .col-lg-3 {
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+       
+    }
     .col-lg-4 {
         display: inline-flex;
         justify-content: center;
@@ -617,20 +618,6 @@ footer {
         .footer_right {
             justify-content: center;
         }
-    }
-    .row_bg {
-        gap: 35px;
-    }
-    .row_em {
-        justify-content: center;
-        gap: 20px;
-    }
-   }
-   @media (max-width: 776px) {
-    .col-lg-3 {
-        display: inline-flex;
-        justify-content: center;
-        text-align: center;
     }
    }
 
