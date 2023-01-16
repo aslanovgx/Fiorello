@@ -631,13 +631,13 @@ main {
 
         .product_header {
             h1 {
-                @extend %big-h1-copy;
+                // @extend %big-h1-copy;
                 font-size: 50px;
                 color: #0e0e0e;
             }
 
             p {
-                @extend %swiper_navigation_p-copy;
+                // @extend %swiper_navigation_p-copy;
                 font-size: 17px;
                 margin: 0;
             }
