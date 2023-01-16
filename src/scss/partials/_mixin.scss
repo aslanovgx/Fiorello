@@ -250,3 +250,42 @@
     }
 
 }
+
+%nav_home_details3-copy {
+    @extend %nav_home_details-copy;
+    width: auto;
+    height: auto;
+    @extend %d-flex;
+    position: absolute;
+    gap: 12px;
+    top: 114px;
+    right: 136px;
+    left: auto;
+    transform: translateY(-46px);
+    height: 0;
+    padding: 0;
+
+    input {
+        @include _All($color: $input_color, $f_size: 12px);
+        @include _All($padding: 0px, $border: none);
+        width: 260px;
+        height: 44px;
+        margin: 7px 0;
+        padding: 0 12px 0 20px;
+
+        &::placeholder {
+            @include _All($color: $input_color, $f_size: 12px);
+        }
+    }
+
+    i {
+        @include _All($f_size: 16px,
+            $f_weight: 600,
+            $color: $input_color,
+            $l_height: 12px,
+            $letter_spacing: 0.1em,
+            $txt_dec: none);
+        cursor: pointer;
+        padding-right: 12px;
+    }
+}
