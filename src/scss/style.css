@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Michroma&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-footer .footer_centre img, main #contact_touch .touch_left .touch_details .logo img, main #contact_touch .touch_left .touch_img img, header #main_nav .nav_left img {
+footer .footer_centre img, main #contact_touch .touch_left .touch_details .logo img, main #contact_touch .touch_left .touch_img img, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .img_and_desc img, header #main_nav .nav_left img {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
@@ -7,13 +7,13 @@ footer .footer_centre img, main #contact_touch .touch_left .touch_details .logo 
   cursor: pointer;
 }
 
-header #mobile_nav .nav_details .special_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details .special_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details {
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .total_part, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part .span_descs, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart #add_to_cart_icon span, header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3, header #main_nav .nav_details {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer .footer_right span, footer .footer_box li a, main #contact_touch .touch_right button {
+footer .footer_right span, footer .footer_box li a, header #mobile_nav .mobile_box .special_add_to_cart span, header #mobile_nav .mobile_box .nav_home_details_home li a, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part button, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part .span_descs, header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part a, main #contact_touch .touch_right button {
   font-size: 12px;
   font-weight: 500;
   color: #1b1b1b;
@@ -49,7 +49,7 @@ main #contact_touch .touch_right p, main #contact_touch .touch_left .touch_detai
   margin: 0 0 30px 0;
 }
 
-header #mobile_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 span, header #main_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 span {
+header #mobile_nav .mobile_box #shop_li .nav_all_ul .nav_home_details2 span, header #main_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 span {
   font-family: "Playfair Display", serif;
   font-size: 38px;
   font-weight: 400;
@@ -63,6 +63,36 @@ footer .footer_box li span {
   color: #afafaf;
   text-align: center;
   transition: 0.4s ease-in-out;
+}
+
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4, header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3 {
+  height: 0;
+  overflow: hidden;
+  width: 240px;
+  background-color: #fff;
+  position: absolute;
+  top: 67px;
+  left: -26px;
+  z-index: 8;
+  transition: 0.3s ease-in-out;
+  padding: 0 0 0 26px;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 li, header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3 li {
+  margin-bottom: 13px;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 li a, header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3 li a {
+  position: relative;
+  border: none;
+  font-size: 13px;
+  color: rgb(109, 106, 106);
+  letter-spacing: 0px;
+  transition: 0.3s ease-in-out;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 li:first-child, header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3 li:first-child {
+  padding-top: 20px;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 li:first-child a, header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3 li:first-child a {
+  border-bottom: 1px solid #1b1b1b;
 }
 
 main #contact_touch .touch_right {
@@ -128,6 +158,11 @@ header #main_nav .nav_details {
     display: none;
   }
 }
+@media (min-width: 1337px) {
+  header #main_nav .nav_details {
+    justify-content: end;
+  }
+}
 header #main_nav .nav_details li {
   position: relative;
   padding: 45px 0;
@@ -167,7 +202,7 @@ header #main_nav .nav_details li #home_id {
 header #main_nav .nav_details li .nav_home_details {
   height: 0;
   overflow: hidden;
-  width: 240px;
+  width: 210px;
   background-color: #fff;
   position: absolute;
   top: 107px;
@@ -226,7 +261,7 @@ header #main_nav .nav_details #shop_li .nav_all_ul {
   z-index: 8;
   transition: 0.4s ease-in-out;
   padding: 0 0 0 26px;
-  width: 1140px;
+  width: 100%;
   background-color: #fff;
   overflow: hidden;
 }
@@ -250,6 +285,9 @@ header #main_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 span {
   font-size: 22px;
   font-weight: 500;
 }
+header #main_nav .nav_details .special_add_to_cart {
+  display: flex;
+}
 header #main_nav .nav_details .special_add_to_cart i {
   font-size: 19px;
   font-weight: 600;
@@ -263,13 +301,60 @@ header #main_nav .nav_details .special_add_to_cart i {
 header #main_nav .nav_details .special_add_to_cart i:first-child:hover {
   color: #f34f3f;
 }
-header #main_nav .nav_details .special_add_to_cart #add_to_cart_icon {
+header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3 {
+  width: auto;
+  height: auto;
+  position: absolute;
+  gap: 12px;
+  top: 114px;
+  right: 136px;
+  left: auto;
+  transform: translateY(-46px);
+  height: 0;
+  padding: 0;
+}
+header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3 input {
+  font-size: 12px;
+  color: #959595;
+  border: none;
+  padding: 0px;
+  width: 260px;
+  height: 44px;
+  margin: 7px 0;
+  padding: 0 12px 0 20px;
+}
+header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3 input::-moz-placeholder {
+  font-size: 12px;
+  color: #959595;
+}
+header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3 input:-ms-input-placeholder {
+  font-size: 12px;
+  color: #959595;
+}
+header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3 input::placeholder {
+  font-size: 12px;
+  color: #959595;
+}
+header #main_nav .nav_details .special_add_to_cart .glasses .nav_home_details3 i {
+  font-size: 16px;
+  font-weight: 600;
+  color: #959595;
+  line-height: 12px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  padding-right: 12px;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart:hover .nav_home_details4 {
+  display: block;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart #add_to_cart_icon {
   position: relative;
   color: #1b1b1b;
   margin-right: 5px;
   margin-left: 15px;
 }
-header #main_nav .nav_details .special_add_to_cart #add_to_cart_icon span {
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart #add_to_cart_icon span {
   position: absolute;
   width: 15px;
   height: 15px;
@@ -283,13 +368,96 @@ header #main_nav .nav_details .special_add_to_cart #add_to_cart_icon span {
   right: -3px;
   background-color: #f34f3f;
 }
-header #main_nav .nav_details .special_add_to_cart span {
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart span {
   font-size: 12px;
   font-weight: 500;
   color: #1b1b1b;
   line-height: 22px;
   text-decoration: none;
   letter-spacing: 0.1em;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 {
+  display: none;
+  position: absolute;
+  top: 65px;
+  left: -103px;
+  height: auto;
+  width: auto;
+  padding: 40px 0 0 0;
+  width: 245px;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 li {
+  font-weight: 500;
+  border: none;
+  font-size: 13px;
+  color: rgb(109, 106, 106);
+  letter-spacing: 0px;
+  padding: 0 !important;
+  margin: 23px 20px;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that {
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 0 18px;
+  margin-bottom: 10px;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to {
+  width: 100%;
+  gap: 18px;
+  justify-content: flex-start;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .img_and_desc img {
+  width: 50px;
+  height: 66px;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part a {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part .span_descs {
+  justify-content: flex-start;
+  gap: 20px;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .all_of_that .card_of_add_to .desc_part .span_descs i {
+  font-size: 16px;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .total_part {
+  justify-content: space-between;
+  padding: 0 18px;
+  width: 100%;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .total_part :first-child {
+  font-weight: 700;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part {
+  padding: 0 18px;
+  width: 100%;
+  justify-content: space-between;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part button {
+  border: none;
+  font-size: 9px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", serif;
+  background-color: #f34f3f;
+  height: 40px;
+  padding: 0 18px;
+  transition: 0.5s ease-in-out;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part button:hover {
+  background-color: rgb(235, 38, 38);
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part :last-child {
+  background-color: #1b1b1b;
+  margin-left: 5px;
+}
+header #main_nav .nav_details .special_add_to_cart .for_add_to_cart .nav_home_details4 .button_part :last-child:hover {
+  background-color: #1b1b1b;
+  opacity: 0.9;
 }
 header #main_nav .bar {
   display: flex;
@@ -298,13 +466,14 @@ header #main_nav .bar {
 }
 header #main_nav .bar li i {
   display: none;
+  cursor: pointer;
 }
 @media (max-width: 1204px) {
   header #main_nav .bar li i {
     display: block;
   }
 }
-header #mobile_nav .nav_details {
+header #mobile_nav .mobile_box {
   transform: translateX(100%);
   transition: 0.3s ease-in-out;
   z-index: 10;
@@ -316,11 +485,11 @@ header #mobile_nav .nav_details {
   width: 350px;
   gap: 16px;
 }
-header #mobile_nav .nav_details li {
+header #mobile_nav .mobile_box li {
   position: relative;
   margin-bottom: 16px;
 }
-header #mobile_nav .nav_details li a {
+header #mobile_nav .mobile_box li a {
   position: relative;
   font-size: 12px;
   font-weight: 500;
@@ -329,7 +498,7 @@ header #mobile_nav .nav_details li a {
   text-decoration: none;
   letter-spacing: 0.1em;
 }
-header #mobile_nav .nav_details li a:hover::before {
+header #mobile_nav .mobile_box li a:hover::before {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -338,7 +507,7 @@ header #mobile_nav .nav_details li a:hover::before {
   height: 1px;
   background-color: black;
 }
-header #mobile_nav .nav_details li a::before {
+header #mobile_nav .mobile_box li a::before {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -348,10 +517,10 @@ header #mobile_nav .nav_details li a::before {
   background-color: black;
   transition: 0.4s ease-in-out;
 }
-header #mobile_nav .nav_details li #home_id {
+header #mobile_nav .mobile_box li a::before #home_id {
   border-bottom: 1px solid rgb(109, 106, 106);
 }
-header #mobile_nav .nav_details li .nav_home_details {
+header #mobile_nav .mobile_box li .nav_home_details {
   height: 0;
   overflow: hidden;
   width: 240px;
@@ -363,11 +532,11 @@ header #mobile_nav .nav_details li .nav_home_details {
   transition: 0.4s ease-in-out;
   padding: 0 0 0 26px;
 }
-header #mobile_nav .nav_details li .nav_home_details li {
+header #mobile_nav .mobile_box li .nav_home_details li {
   margin-bottom: 17px;
   padding: 0;
 }
-header #mobile_nav .nav_details li .nav_home_details li a {
+header #mobile_nav .mobile_box li .nav_home_details li a {
   position: relative;
   border: none;
   font-size: 13px;
@@ -375,41 +544,35 @@ header #mobile_nav .nav_details li .nav_home_details li a {
   letter-spacing: 0px;
   transition: 0.3s ease-in-out;
 }
-header #mobile_nav .nav_details li .nav_home_details li #main_home_id {
+header #mobile_nav .mobile_box li .nav_home_details li #main_home_id {
   border-bottom: 1px solid rgb(109, 106, 106);
 }
-header #mobile_nav .nav_details li .nav_home_details li:first-child {
+header #mobile_nav .mobile_box li .nav_home_details li:first-child {
   padding-top: 20px;
 }
-header #mobile_nav .nav_details #home_li {
+header #mobile_nav .mobile_box .nav_home_details_home li {
+  margin-bottom: 4px;
+}
+header #mobile_nav .mobile_box .nav_home_details_home li a {
+  text-transform: uppercase;
+  color: green;
+  font-size: 10px;
+}
+header #mobile_nav .mobile_box #home_li {
   display: flex;
   justify-content: space-between;
 }
-header #mobile_nav .nav_details #home_li:hover .nav_home_details {
-  height: 310px;
-}
-header #mobile_nav .nav_details #home_li i {
+header #mobile_nav .mobile_box #home_li i {
   font-size: 18px;
+  cursor: pointer;
 }
-header #mobile_nav .nav_details #pages_li:hover .nav_home_details {
-  height: 140px;
+header #mobile_nav .mobile_box #home_li #home_id:hover {
+  color: green;
 }
-header #mobile_nav .nav_details #portfolio_li:hover .nav_home_details {
-  height: 140px;
-}
-header #mobile_nav .nav_details #blog_li:hover .nav_home_details {
-  height: 140px;
-}
-header #mobile_nav .nav_details #elements_li:hover .nav_home_details {
-  height: 140px;
-}
-header #mobile_nav .nav_details #shop_li {
+header #mobile_nav .mobile_box #shop_li {
   position: static;
 }
-header #mobile_nav .nav_details #shop_li:hover .nav_all_ul {
-  height: 460px;
-}
-header #mobile_nav .nav_details #shop_li .nav_all_ul {
+header #mobile_nav .mobile_box #shop_li .nav_all_ul {
   height: 0;
   display: flex;
   justify-content: start;
@@ -424,11 +587,11 @@ header #mobile_nav .nav_details #shop_li .nav_all_ul {
   background-color: #fff;
   overflow: hidden;
 }
-header #mobile_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 li {
+header #mobile_nav .mobile_box #shop_li .nav_all_ul .nav_home_details2 li {
   margin-bottom: 17px;
   padding: 0;
 }
-header #mobile_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 li a {
+header #mobile_nav .mobile_box #shop_li .nav_all_ul .nav_home_details2 li a {
   position: relative;
   border: none;
   font-size: 13px;
@@ -436,56 +599,17 @@ header #mobile_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 li a {
   letter-spacing: 0px;
   transition: 0.3s ease-in-out;
 }
-header #mobile_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 li:first-child {
+header #mobile_nav .mobile_box #shop_li .nav_all_ul .nav_home_details2 li:first-child {
   padding-top: 20px;
 }
-header #mobile_nav .nav_details #shop_li .nav_all_ul .nav_home_details2 span {
+header #mobile_nav .mobile_box #shop_li .nav_all_ul .nav_home_details2 span {
   color: rgba(0, 0, 0, 0.842);
   font-size: 22px;
   font-weight: 500;
 }
-header #mobile_nav .nav_details .special_add_to_cart i {
-  font-size: 19px;
-  font-weight: 600;
-  color: rgba(27, 27, 27, 0.7411764706);
-  line-height: 22px;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
+header #mobile_nav .mobile_box .special_add_to_cart i {
+  font-size: 13px;
 }
-header #mobile_nav .nav_details .special_add_to_cart i:first-child:hover {
-  color: #f34f3f;
-}
-header #mobile_nav .nav_details .special_add_to_cart #add_to_cart_icon {
-  position: relative;
-  color: #1b1b1b;
-  margin-right: 5px;
-  margin-left: 15px;
-}
-header #mobile_nav .nav_details .special_add_to_cart #add_to_cart_icon span {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  font-size: 9px;
-  font-weight: 700;
-  color: white;
-  margin: 0 auto;
-  border-right: 50%;
-  top: -3px;
-  right: -3px;
-  background-color: #f34f3f;
-}
-header #mobile_nav .nav_details .special_add_to_cart span {
-  font-size: 12px;
-  font-weight: 500;
-  color: #1b1b1b;
-  line-height: 22px;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-}
-
 main #contact_map .map_box {
   position: relative;
   text-align: right;
@@ -503,7 +627,7 @@ main #contact_map .map_box .gmap_canvas iframe {
   height: 320px;
 }
 main #contact_touch {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 main #contact_touch .touch_left {
   background-color: #f8f8f8;
@@ -582,12 +706,7 @@ footer {
   background-color: #fefaf3;
   padding: 70px 0 0 0;
 }
-@media (max-width: 776px) {
-  footer .col-lg-3 {
-    display: inline-flex;
-    justify-content: center;
-    text-align: center;
-  }
+@media (max-width: 992px) {
   footer .col-lg-4 {
     display: inline-flex;
     justify-content: center;
@@ -595,6 +714,20 @@ footer {
   }
   footer .col-lg-4 .footer_right {
     justify-content: center;
+  }
+  footer .row_bg {
+    gap: 35px;
+  }
+  footer .row_em {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 776px) {
+  footer .col-lg-3 {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
   }
 }
 footer .row_foot {
